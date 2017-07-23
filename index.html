@@ -1,0 +1,171 @@
+<html>
+<head>
+	<title>Udghosh'17</title>
+
+	<!-- stylesheet -->
+	<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+  	<script type="text/javascript" src="js/main.js"></script>
+  	<style>
+  	*{
+  		margin: 0;
+  		padding: 0;
+  	}
+  	</style>
+
+  	<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 12, 2017 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("dates").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("dates").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+</head>
+<body >
+<div class="body">
+	<!-- Navigation Bar -->
+	<div class="nab">
+	
+  		
+      			
+    	
+    		<ul >
+    			<li style="margin-left: 0px; margin-right: 15px; "><a id="logo" class="navbarbrand" href="#"></a></li>
+      			<li class="cl-effect-1"><a href="#">EVENTS</a></li>
+      			<li class="cl-effect-1"><a href="#">GALLERY</a></li>
+      			<li class="cl-effect-1"><a href="#">TEAM</a ></li>
+      			<li class="cl-effect-1"><a href="#">SPONSORS</a></li>
+      			<li style="margin-left: 24%; color: #495693;"><p id="dates" class="dates"></p><li>
+    		</ul>
+
+    		<ul class="rightmenu">
+    			<li class="faq"><a href="#" style="font-size: 1em;">
+    			<span class="fa-stack fa-lg" style="font-size: 1em;">
+    			<i class="fa fa-circle fa-stack-2x"></i>
+  				<i class="fa fa-question fa-stack-1x fa-inverse"></i><span style="text-align: center;padding-left: 30px;">FAQs
+				</span></a></li>
+				<button class="button button3"><a href="#">REGISTER</a></button>
+
+    		</ul>
+  		
+	</div>
+
+	
+  		<div class="conten" style="position: fixed;  background-image: url('img/homebackground.png'); background-repeat: no-repeat ; background-color: #333; background-size: 100%; ">
+    	
+    		<div class="colum1">
+    			<div class="theme" style="height: 40%;width: 40%; display: block; margin: auto;margin-top:10%;" >
+    			<img  src="img/tracing-the-roots.png" style="width: 100%; height: 100%; align="middle">
+    			</div>
+    			<img class ="theme1" src="img/Dates.png" style="margin: auto; display:block;height:10%; width: 50%;" >
+    			<div style="margin: auto; display: block; height: 20%; width: 30%; margin-top: 5%;">
+    			<!-- Document icon by Icons8 -->
+				<a href="#"><img src="https://png.icons8.com/document/office/80" title="Document" width="80" height="80"><span style="display: block; position: absolute; padding-left: 3px;">BROCHURE</span></a>
+					<!-- Video File icon by Icons8 -->
+				<a href="#" style="float: right;"><img src="https://png.icons8.com/video-file/office/80" title="Video File" width="80" height="80"><span style="display:block;">VIDEO</span></a>
+				</div>
+				
+    		</div> 
+    		
+    		<div class="colum2" style="background-color:transparent; ">
+    			<div id="myCarousel" class="carousel slide" data-ride="carousel" style="padding: 0;">
+				    <!-- Indicators -->
+				    <ol class="carousel-indicators" style="margin-bottom: 70px; ">
+				      	<li data-target="#mySlides" data-slide-to="0" class="active"></li>
+				      	<li data-target="#myCarousel" data-slide-to="1"></li>
+				      	<li data-target="#myCarousel" data-slide-to="2"></li>
+				    </ol>
+
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner">
+
+				      	<div class="item active">
+				        	<img src="img/portal.png" alt="Los Angeles" style="width:100%;min-height: 560px;">
+				        	<div class="carousel-caption" style="margin-bottom: 70px;">
+          						<button class="slidebutton1" style="padding: 3.5px 10px; margin-right: 40px;"><a href="#">REGISTER</a></button>
+          						<button class="slidebutton1" style="padding: 3.5px 25px;"><a href="#">FAQs</a></button>
+          						
+
+        					</div>
+				        	
+				      	</div>
+
+				      	<div class="item">
+				        	<img src="img/CA1.png" alt="Chicago" style="width:100%; min-height: 560px">
+				        	<div class="carousel-caption" style="margin-bottom: 70px;">
+          						<button class="slidebutton1" style="padding: 3.5px 14px; margin-right: 40px;"><a href="#">JOIN US</a></button>
+          						<button class="slidebutton1" style="padding: 3.5px 16px;"><a href="#">WHY CA</a></button>
+          						
+
+        					</div>
+				      	</div>
+				    
+				      	<div class="item">
+				        	<img src="img/lookback1.png" alt="New York" style="width:100%; min-height: 560px;">
+				        		<div class="carousel-caption" style="margin-bottom: 70px;">
+          						<button class="slidebutton1"><a href="#">GALLERY</a></button>
+          						
+
+        					</div>
+				      	</div>
+				  
+				    </div>
+
+				 </div>
+			</div>
+		</div>
+			
+		<div class="foot">
+		<div class="footer-social-icons">
+    <ul class="social-icons">
+        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+        
+    </ul>
+
+</div>
+<div style="color: #cccccc;  float: right; margin-right: 30px;margin-top:7px;"><i class="fa fa-copyright" aria-hidden="true"></i><span style="padding-left: 5px;font-size: 13px;">Creatives Udghosh 2017</span></div>
+		</div>
+		
+
+	</div>
+
+		
+
+</div>
+
+
+</body>
+</html>
