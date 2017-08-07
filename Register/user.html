@@ -21,7 +21,13 @@
   		padding: 0;
   	}
   	</style> 
+
+  		<link href="style2.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
+
+
 <body id="body-color" style="background-image: url('formback.png'); background-position: center; background-size: 100%;  background-attachment: fixed;"> 
 <div class="topnav" id="myTopnav">
 	<div class="navbar-header"><a class="navbar-brand" href="#"><img src="img/logo.png" >
@@ -40,18 +46,14 @@
   				<i class="fa fa-question fa-stack-1x fa-inverse"></i><span style="text-align: center;padding-left: 30px; top:7px;">FAQs
 				</span></a></li>
 				
-
-    		
 </div>
 
 
-
-
-  		
 <div  class="form3 col-md-12" 	 >
   
 <div class="form4">
-    <form class=" form-horizontal" action="user.php" method="POST"  id="contact_form" style="background-color: rgba(245, 245, 245,0.8); border-radius:15px; border: 1px solid #ddd; padding: 20px; ">
+    <form class=" form-horizontal" action="user.php" method="POST"  id="contact_form" name="form1"
+    style="background-color: rgba(245, 245, 245,0.8); border-radius:15px; border: 1px solid #ddd; padding: 20px; ">
 <fieldset>
 
 <!-- Form Name -->
@@ -63,7 +65,7 @@
   <div class="col-md-9 inputGroupContainer">
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="user" placeholder="Enter your username" class="form-control"  type="text">
+  <input  name="user" placeholder="Enter your username" class="form-control"  type="text" required>
     </div>
   </div>
 </div>
@@ -75,7 +77,7 @@
     <div class="col-md-9 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-education"></i></span>
-  <input name="college" placeholder="Enter your college name" class="form-control"  type="text">
+  <input name="college" placeholder="Enter your college name" class="form-control"  type="text" required>
     </div>
   </div>
 </div>
@@ -87,7 +89,7 @@
     <div class="col-md-9 selectContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-    <select name="sports" class="form-control selectpicker" style="text-align: center;">
+    <select name="sports" class="form-control selectpicker" style="text-align: center;" required>
       <option value=" " >Please select your sport</option>
       <option>Athletics</option>
         <option>Badminton</option>
@@ -135,7 +137,7 @@
   <div class="col-md-9 inputGroupContainer">
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="captain" placeholder="Enter your captain name" class="form-control"  type="text">
+  <input  name="captain" placeholder="Enter your captain name" class="form-control"  type="text" required>
     </div>
   </div>
 </div>
@@ -146,7 +148,7 @@
     <div class="col-md-9 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+  <input name="email" placeholder="E-Mail Address" class="form-control"  type="email" required >
     </div>
   </div>
 </div>
@@ -158,7 +160,7 @@
     <div class="col-md-9 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact" placeholder="(905)945-1452" class="form-control" type="text">
+  <input name="contact" placeholder="(905)945-1452" class="form-control" type="text" required >
     </div>
   </div>
 </div>
@@ -189,15 +191,16 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player1" placeholder="" class="form-control"  type="text">
+  <input name="player1" placeholder="" class="form-control" type="text">
     </div>
   </div>
   <label class="col-md-2 control-label">Contact 1</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact1" placeholder="" class="form-control"  type="text">
-    </div>
+  <input name="contact1" placeholder="" class="form-control" type="text" id="contact1">
+  <span class="contact">enter valid number</span>
+    </div>		
   </div>
 </div>
 
@@ -206,14 +209,15 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player2" placeholder="" class="form-control"  type="text">
+  <input name="player2" placeholder="" class="form-control" type="text">
     </div>
   </div>
   <label class="col-md-2 control-label">Contact 2</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact2" placeholder="" class="form-control"  type="text">
+  <input name="contact2" placeholder="" class="form-control" type="text" id="contact2">
+  <span class="contact">enter valid number</span>
     </div>
   </div>
 </div>
@@ -223,14 +227,15 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player3" placeholder="" class="form-control"  type="text">
+  <input name="player3" placeholder="" class="form-control" type="text">
     </div>
   </div>
   <label class="col-md-2 control-label">Contact 3</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact3" placeholder="" class="form-control"  type="text">
+  <input name="contact3" placeholder="" class="form-control" type="text" id="contact3">
+  <span class="contact">enter valid number</span>
     </div>
   </div>
 </div>
@@ -240,14 +245,15 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player4" placeholder="" class="form-control"  type="text">
+  <input name="player4" placeholder="" class="form-control" type="text">
     </div>
   </div>
   <label class="col-md-2 control-label">Contact 4</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact4" placeholder="" class="form-control"  type="text">
+  <input name="contact4" placeholder="" class="form-control" type="text" id="contact4">
+  <span class="contact">enter valid number</span>
     </div>
   </div>
 </div>
@@ -257,14 +263,15 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player5" placeholder="" class="form-control"  type="text">
+  <input name="player5" placeholder="" class="form-control" type="text">
     </div>
   </div>
   <label class="col-md-2 control-label">Contact 5</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact5" placeholder="" class="form-control"  type="text">
+  <input name="contact5" placeholder="" class="form-control" type="text" id="contact5">
+  <span class="contact">enter valid number</span>
     </div>
   </div>
 </div>
@@ -274,14 +281,15 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player6" placeholder="" class="form-control"  type="text">
+  <input name="player6" placeholder="" class="form-control" type="text">
     </div>
   </div>
   <label class="col-md-2 control-label">Contact 6</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact6" placeholder="" class="form-control"  type="text">
+  <input name="contact6" placeholder="" class="form-control" type="text" id="contact6">
+  <span class="contact">enter valid number</span>
     </div>
   </div>
 </div>
@@ -291,14 +299,15 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player7" placeholder="" class="form-control"  type="text">
+  <input name="player7" placeholder="" class="form-control" type="text">
     </div>
   </div>
   <label class="col-md-2 control-label">Contact 7</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact7" placeholder="" class="form-control"  type="text">
+  <input name="contact7" placeholder="" class="form-control" type="text" id="contact7">
+  <span class="contact">enter valid number</span>
     </div>
   </div>
 </div>
@@ -308,14 +317,15 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player8" placeholder="" class="form-control"  type="text">
+  <input name="player8" placeholder="" class="form-control" type="text">
     </div>
   </div>
   <label class="col-md-2 control-label">Contact 8</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact8" placeholder="" class="form-control"  type="text">
+  <input name="contact8" placeholder="" class="form-control" type="text" id="contact8">
+  <span class="contact">enter valid number</span>
     </div>
   </div>
 </div>
@@ -325,14 +335,15 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player9" placeholder="" class="form-control"  type="text">
+  <input name="player9" placeholder="" class="form-control" type="text">
     </div>
   </div>
   <label class="col-md-2 control-label">Contact 9</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact9" placeholder="" class="form-control"  type="text">
+  <input name="contact9" placeholder="" class="form-control" type="text" id="contact9">
+  <span class="contact">enter valid number</span>
     </div>
   </div>
 </div>
@@ -342,15 +353,16 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player10" placeholder="" class="form-control"  type="text">
+  <input name="player10" placeholder="" class="form-control" type="text">
     </div>
   </div>
   <label class="col-md-2 control-label">Contact 10</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact10" placeholder="" class="form-control"  type="text">
-    </div>
+  <input name="contact10" placeholder="" class="form-control" type="text" id="contact10">
+   <span class="contact">enter valid number</span>
+   </div>
   </div>
 </div>
 
@@ -359,15 +371,16 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player11" placeholder="" class="form-control"  type="text">
+  <input name="player11" placeholder="" class="form-control" type="text">
     </div>
   </div>
   <label class="col-md-2 control-label">Contact 11</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact11" placeholder="" class="form-control"  type="text">
-    </div>
+  <input name="contact11" placeholder="" class="form-control" type="text" id="contact11">
+   <span class="contact">enter valid number</span>
+   </div>
   </div>
 </div>
 
@@ -376,15 +389,16 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player12" placeholder="" class="form-control"  type="text">
+  <input name="player12" placeholder="" class="form-control" type="text">
     </div>
   </div>
   <label class="col-md-2 control-label">Contact 12</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact12" placeholder="" class="form-control"  type="text">
-    </div>
+  <input name="contact12" placeholder="" class="form-control" type="text" id="contact12">
+   <span class="contact">enter valid number</span>
+   </div>
   </div>
 </div>
 
@@ -393,14 +407,15 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player13" placeholder="" class="form-control"  type="text">
+  <input name="player13" placeholder="" class="form-control" type="text">
     </div>
   </div>
   <label class="col-md-2 control-label">Contact 13</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact13" placeholder="" class="form-control"  type="text">
+  <input name="contact13" placeholder="" class="form-control" type="text" id="contact13">
+  <span class="contact">enter valid number</span>
     </div>
   </div>
 </div>
@@ -410,14 +425,15 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player14" placeholder="" class="form-control"  type="text">
+  <input name="player14" placeholder="" class="form-control" type="text">
     </div>
   </div>
   <label class="col-md-2 control-label">Contact 14</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact14" placeholder="" class="form-control"  type="text">
+  <input name="contact14" placeholder="" class="form-control" type="text" id="contact14">
+  <span class="contact">enter valid number</span>
     </div>
   </div>
 </div>
@@ -427,14 +443,15 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player15" placeholder="" class="form-control"  type="text">
+  <input name="player15" placeholder="" class="form-control" type="text">
     </div>
   </div>
   <label class="col-md-2 control-label">Contact 15</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact15" placeholder="" class="form-control"  type="text">
+  <input name="contact15" placeholder="" class="form-control" type="text" id="contact15">
+  <span class="contact">enter valid number</span>
     </div>
   </div>
 </div>
@@ -444,14 +461,15 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player16" placeholder="" class="form-control"  type="text">
+  <input name="player16" placeholder="" class="form-control" type="text">
     </div>
   </div>
   <label class="col-md-2 control-label">Contact 16</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact16" placeholder="" class="form-control"  type="text">
+  <input name="contact16" placeholder="" class="form-control" type="text" id="contact16">
+  <span class="contact">enter valid number</span>
     </div>
   </div>
 </div>
@@ -465,8 +483,8 @@
 
 
 
-</fieldset>
-</form>
+
+
 </div>
 
 <div class="foot">
@@ -496,6 +514,400 @@ function myFunction() {
 
 }
 </script>
+
+ 
+<script>
+$(function(){
+
+var $myContact1 = $("#contact1");
+$myContact1.next().hide();
+
+function isContactValid1() {
+  return $myContact1.val().length === 10;
+}
+
+function contactEvent1(){
+    if(isContactValid1()) {
+      $myContact1.next().hide();
+    } else {
+      $myContact1.next().show();
+    }
+};
+$myContact1.focusout(contactEvent1).keyup(contactEvent1);
+
+$myContact1.focusout(function() {
+  if($myContact1.val() === ""){
+    $myContact1.next().hide();
+  }
+});
+
+
+var $myContact2 = $("#contact2");
+$myContact2.next().hide();
+
+function isContactValid2() {
+  return $myContact2.val().length === 10;
+}
+
+function contactEvent2(){
+    if(isContactValid2()) {
+      $myContact2.next().hide();
+    } else {
+      $myContact2.next().show();
+    }
+};
+$myContact2.focusout(contactEvent2).keyup(contactEvent2);
+
+$myContact2.focusout(function() {
+  if($myContact2.val() === ""){
+    $myContact2.next().hide();
+  }
+});
+
+
+var $myContact3 = $("#contact3");
+$myContact3.next().hide();
+
+function isContactValid3() {
+  return $myContact3.val().length === 10;
+}
+
+function contactEvent3(){
+    if(isContactValid3()) {
+      $myContact3.next().hide();
+    } else {
+      $myContact3.next().show();
+    }
+};
+$myContact3.focusout(contactEvent3).keyup(contactEvent3);
+
+$myContact3.focusout(function() {
+  if($myContact3.val() === ""){
+    $myContact3.next().hide();
+  }
+});
+
+var $myContact4 = $("#contact4");
+$myContact4.next().hide();
+
+function isContactValid4() {
+  return $myContact4.val().length === 10;
+}
+
+$myContact4.focusout(function() {
+  if($myContact4.val() === ""){
+    $myContact4.next().hide();
+  }
+});
+
+function contactEvent4(){
+    if(isContactValid4()) {
+      $myContact4.next().hide();
+    } else {
+      $myContact4.next().show();
+    }
+};
+$myContact4.focusout(contactEvent4).keyup(contactEvent4);
+
+$myContact4.focusout(function() {
+  if($myContact4.val() === ""){
+    $myContact4.next().hide();
+  }
+});
+
+var $myContact5 = $("#contact5");
+$myContact5.next().hide();
+
+function isContactValid5() {
+  return $myContact5.val().length === 10;
+}
+
+
+function contactEvent5(){
+    if(isContactValid5()) {
+      $myContact5.next().hide();
+    } else {
+      $myContact5.next().show();
+    }
+};
+$myContact5.focusout(contactEvent5).keyup(contactEvent5);
+
+$myContact5.focusout(function() {
+  if($myContact5.val() === ""){
+    $myContact5.next().hide();
+  }
+});
+
+var $myContact6 = $("#contact6");
+$myContact6.next().hide();
+
+function isContactValid6() {
+  return $myContact6.val().length === 10;
+}
+
+
+function contactEvent6(){
+    if(isContactValid6()) {
+      $myContact6.next().hide();
+    } else {
+      $myContact6.next().show();
+    }
+};
+$myContact6.focusout(contactEvent6).keyup(contactEvent6);
+
+$myContact6.focusout(function() {
+  if($myContact6.val() === ""){
+    $myContact6.next().hide();
+  }
+});
+
+
+var $myContact7 = $("#contact7");
+$myContact7.next().hide();
+
+function isContactValid7() {
+  return $myContact7.val().length === 10;
+}
+
+
+function contactEvent7(){
+    if(isContactValid7()) {
+      $myContact7.next().hide();
+    } else {
+      $myContact7.next().show();
+    }
+};
+$myContact7.focusout(contactEvent7).keyup(contactEvent7);
+
+
+$myContact7.focusout(function() {
+  if($myContact7.val() === ""){
+    $myContact7.next().hide();
+  }
+});
+
+var $myContact8 = $("#contact8");
+$myContact8.next().hide();
+
+function isContactValid8() {
+  return $myContact8.val().length === 10;
+}
+
+
+function contactEvent8(){
+    if(isContactValid8()) {
+      $myContact8.next().hide();
+    } else {
+      $myContact8.next().show();
+    }
+};
+$myContact8.focusout(contactEvent8).keyup(contactEvent8);
+
+
+$myContact8.focusout(function() {
+  if($myContact8.val() === ""){
+    $myContact8.next().hide();
+  }
+});
+
+var $myContact9 = $("#contact9");
+$myContact9.next().hide();
+
+function isContactValid9() {
+  return $myContact9.val().length === 10;
+}
+
+
+function contactEvent9(){
+    if(isContactValid9()) {
+      $myContact9.next().hide();
+    } else {
+      $myContact9.next().show();
+    }
+};
+$myContact9.focusout(contactEvent9).keyup(contactEvent9);
+
+
+$myContact9.focusout(function() {
+  if($myContact9.val() === ""){
+    $myContact9.next().hide();
+  }
+});
+
+var $myContact10 = $("#contact10");
+$myContact10.next().hide();
+
+function isContactValid10() {
+  return $myContact10.val().length === 10;
+}
+
+
+function contactEvent10(){
+    if(isContactValid10()) {
+      $myContact10.next().hide();
+    } else {
+      $myContact10.next().show();
+    }
+};
+$myContact10.focusout(contactEvent10).keyup(contactEvent10);
+
+
+$myContact10.focusout(function() {
+  if($myContact10.val() === ""){
+    $myContact10.next().hide();
+  }
+});
+
+var $myContact11 = $("#contact11");
+$myContact11.next().hide();
+
+function isContactValid11() {
+  return $myContact11.val().length === 10;
+}
+
+
+function contactEvent11(){
+    if(isContactValid11()) {
+      $myContact11.next().hide();
+    } else {
+      $myContact11.next().show();
+    }
+};
+$myContact11.focusout(contactEvent11).keyup(contactEvent11);
+
+
+$myContact11.focusout(function() {
+  if($myContact11.val() === ""){
+    $myContact11.next().hide();
+  }
+});
+
+var $myContact12 = $("#contact12");
+$myContact12.next().hide();
+
+function isContactValid12() {
+  return $myContact12.val().length === 10;
+}
+
+
+function contactEvent12(){
+    if(isContactValid12()) {
+      $myContact12.next().hide();
+    } else {
+      $myContact12.next().show();
+    }
+};
+$myContact12.focusout(contactEvent12).keyup(contactEvent12);
+
+$myContact12.focusout(function() {
+  if($myContact12.val() === ""){
+    $myContact12.next().hide();
+  }
+});
+
+var $myContact13 = $("#contact13");
+$myContact13.next().hide();
+
+function isContactValid13() {
+  return $myContact13.val().length === 10;
+}
+
+
+function contactEvent13(){
+    if(isContactValid13()) {
+      $myContact13.next().hide();
+    } else {
+      $myContact13.next().show();
+    }
+};
+$myContact13.focusout(contactEvent13).keyup(contactEvent13);
+
+$myContact13.focusout(function() {
+  if($myContact13.val() === ""){
+    $myContact13.next().hide();
+  }
+});
+
+var $myContact14 = $("#contact14");
+$myContact14.next().hide();
+
+function isContactValid14() {
+  return $myContact14.val().length === 10;
+}
+
+
+function contactEvent14(){
+    if(isContactValid14()) {
+      $myContact14.next().hide();
+    } else {
+      $myContact14.next().show();
+    }
+};
+$myContact14.focusout(contactEvent14).keyup(contactEvent14);
+
+$myContact14.focusout(function() {
+  if($myContact14.val() === ""){
+    $myContact14.next().hide();
+  }
+});
+
+var $myContact15 = $("#contact15");
+$myContact15.next().hide();
+
+function isContactValid15() {
+  return $myContact15.val().length === 10;
+}
+
+
+function contactEvent15(){
+    if(isContactValid15()) {
+      $myContact15.next().hide();
+    } else {
+      $myContact15.next().show();
+    }
+};
+$myContact15.focusout(contactEvent15).keyup(contactEvent15);
+
+$myContact15.focusout(function() {
+  if($myContact15.val() === ""){
+    $myContact15.next().hide();
+  }
+});
+
+var $myContact16 = $("#contact16");
+$myContact16.next().hide();
+
+function isContactValid16() {
+  return $myContact16.val().length === 10;
+}
+
+
+function contactEvent16(){
+    if(isContactValid16()) {
+      $myContact16.next().hide();
+    } else {
+      $myContact16.next().show();
+    }
+};
+$myContact16.focusout(contactEvent16).keyup(contactEvent16);
+
+$myContact16.focusout(function() {
+  if($myContact16.val() === ""){
+    $myContact16.next().hide();
+  }
+});
+
+
+});
+</script>
+
+
+<script>
+  $("#contact_form").submit(function() {
+          window.alert("Your team have been registered");
+  })
+</script>
+
 
 </body> 
 </html>
