@@ -319,6 +319,10 @@ a:hover {
  
 }
 
+.body .conten  .colum2 .carousel-indicators{
+    margin-bottom: 70px;
+}
+
 .body .foot {
     height: 5%;
     width: 100%;
@@ -523,4 +527,63 @@ ul.social-icons {
    from {opacity:  0;}
     to {opacity: 1;}
 
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  #creative { display: none; }  /* hide it on small screens */
+  #myTopnav { display: none; } 
+  .colum1    {display: none;}
+ .body .conten  .colum2 {
+    width: 100%;
+    float: none;
+    box-shadow: 
+        inset 0px 100px 15px 20px #333,
+        inset 0px -100px 15px 20px #333; 
+    margin-top:-30px;
+    height: 86%;
+  }
+
+  .carousel-inner {
+    width: 100%;
+    height: 100%;
+  }
+ 
+   .foot {
+        position: fixed;
+       
+        bottom: 0;
+    }
+.body .conten .colum2 .carousel-indicators {
+    margin-bottom: 80px;    
+}
+.carousel-caption{
+    margin-top: 0px;
+}
+
+.item {
+    height: 75%;
+}
+.register {
+    float: right;
+    margin: auto;
+    margin-right: 25px;
+    padding: 3px;
+    
+    
+}
+
+.register:hover {
+    background-color:   #9f1910;
+    color: #cccccc;
+}
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 1280px) {
+   /* hide it on small screens */
+  #mobilenav {display: none;}
+  #register {
+    display: none;
+  }
 }
