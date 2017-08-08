@@ -1,29 +1,29 @@
 <!DOCTYPE HTML> 
 <html>
 <head> 
-	<title>Sign-In</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-In</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- stylesheet -->
-	<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32"> 
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- JavaScript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-  	<script type="text/javascript" src="js/main.js"></script>
-  	<style>
-  	*{
-  		margin: 0;
-  		padding: 0;
-  	}
-  	</style>
+  <!-- stylesheet -->
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="js/main.js"></script>
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    </style>
 </head> 
 <body id="body-color" style="background-image: url('formback.png'); background-position: center; background-size: 100%;  background-attachment: fixed;"> 
 <div class="topnav" id="myTopnav">
-	<div class="navbar-header"><a class="navbar-brand" href="../index.html"><img src="img/logo.png" >
+  <div class="navbar-header"><a class="navbar-brand" href="../index.html"><img src="img/logo.png" >
         </a></div>
 
   <span class="cl-effect-1"><a href="#">EVENTS</a></span>
@@ -31,13 +31,13 @@
   <span class="cl-effect-1"><a href="#">TEAM</a></span>
   <span class="cl-effect-1"><a href="#">SPONSORS</a></span>
   <a href="javascript:void(0);" style="font-size:15px; color: #333;" class="icon" onclick="myFunction()">&#9776;</a>
-  			<a style="float:none; display: inline" href="signup.html"><button class="button button3">REGISTER</button></a>
+        <a style="float:none; display: inline" href="signup.html"><button class="button button3">REGISTER</button></a>
  
-    			<li class="faq"><a href="#" style="font-size: 13px; height: 40px; width: 49px; ">
-    			<span class="fa-stack fa-lg" style="font-size: 1em;">
-    			<i class="fa fa-circle fa-stack-2x"></i>
-  				<i class="fa fa-question fa-stack-1x fa-inverse"></i><span style="text-align: center;padding-left: 30px; top:7px;">FAQs
-				</span></a></li>
+          <li class="faq"><a href="#" style="font-size: 13px; height: 40px; width: 49px; ">
+          <span class="fa-stack fa-lg" style="font-size: 1em;">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-question fa-stack-1x fa-inverse"></i><span style="text-align: center;padding-left: 30px; top:7px;">FAQs
+        </span></a></li>
 </div>
 
 <!-- Mobile navbar -->
@@ -71,8 +71,8 @@
 
 
 <div style="position: relative;" class="title1">
-    	<legend style="text-align: center; font-size: 30px; color: #333">Log In Your Udghosh Account</legend>
-	</div>
+      <legend style="text-align: center; font-size: 30px; color: #333">Log In Your Udghosh Account</legend>
+  </div>
 
 <div  class="form2" >
     <form class=" form-horizontal" action="login.php" method="POST"  id="contact_form" style="background-color: rgba(245, 245, 245,0.8); border-radius:15px; border: 1px solid #ddd; padding: 20px; ">
@@ -86,7 +86,7 @@
   <div class="col-md-10 inputGroupContainer">
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="user" placeholder="Enter your username" class="form-control"  type="text">
+  <input  name="user" placeholder="Enter your username" class="form-control"  type="text" required>
     </div>
   </div>
 </div>
@@ -98,7 +98,7 @@
     <div class="col-md-10 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-  <input name="pass" placeholder="Enter your password" class="form-control" type="password">
+  <input name="pass" placeholder="Enter your password" class="form-control" type="password" required>
     </div>
   </div>
 </div>
@@ -116,7 +116,7 @@
 </div>
 
 <div class="foot">
-		<div class="footer-social-icons">
+    <div class="footer-social-icons">
     <ul class="social-icons">
         <li><a href="https://www.facebook.com/udghosh.iitk/" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
         <li><a href="https://twitter.com/udghoshiitk" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
@@ -128,10 +128,9 @@
 
 </div>
 <div id="creative" style="color: #cccccc;  float: right; margin-right: 30px;margin-top:7px;"><i class="fa fa-copyright" aria-hidden="true"></i><span style="padding-left: 5px;font-size: 13px;">Creatives Udghosh 2017</span></div>
-		</div>
+    </div>
 
   
     
 </body> 
 </html> 
-
