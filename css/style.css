@@ -541,7 +541,7 @@ ul.social-icons {
         inset 0px 100px 15px 20px #333,
         inset 0px -100px 15px 20px #333; 
     margin-top:-30px;
-    height: 86%;
+    height: 100%;
   }
 
   .carousel-inner {
@@ -560,9 +560,48 @@ ul.social-icons {
 .carousel-caption{
     margin-top: 0px;
 }
+.colum2 .carousel-caption .slidebutton1  {
+    padding: 2px 8px;
+    font-size: 11px;
+    margin-bottom: 5px;
+    
 
-.item {
-    height: 75%;
+}
+
+.colum2 .carousel-caption .slidebutton1 a {
+    padding: 2px;
+    font-size: 11px;
+
+}
+.item1 {
+    height: 90%;
+    background-image: url('../img/portal.png'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: 100%;
+}
+
+.item2 {
+    height: 90%;
+    background-image: url('../img/CA1.png'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: 100%;
+}
+
+.item3 {
+    height: 90%;
+    background-image: url('../img/lookback1.png'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: 100%;
+}
+
+.images{
+   display: none;
 }
 .register {
     float: right;
@@ -587,3 +626,4 @@ ul.social-icons {
     display: none;
   }
 }
+
