@@ -24,7 +24,7 @@
 </head>
 
 
-<body id="body-color" style="background-image: url('formback.png'); background-position: center; background-size: 100%;  background-attachment: fixed;"> 
+<body id="body-color" style="overflow: auto;background-image: url('formback.png'); background-position: center; background-size: 100%;  background-attachment: fixed; height: 900px;"> 
 <div class="topnav" id="myTopnav">
   <div class="navbar-header"><a class="navbar-brand" href="../index.html"><img src="img/logo.png" >
         </a></div>
@@ -79,7 +79,7 @@
   
 <div class="form4">
     <form class=" form-horizontal" action="user.php" method="POST"  id="contact_form" name="form1"
-    style="background-color: rgba(245, 245, 245,0.8); border-radius:15px; border: 1px solid #ddd; padding: 20px; ">
+    style="background-color: rgba(245, 245, 245,0.8); border-radius:15px; border: 1px solid #ddd; padding: 20px; margin-bottom: 0px;">
 <fieldset>
 
 <!-- Form Name -->
@@ -108,6 +108,104 @@
   </div>
 </div>
 <br>
+
+ <!-- ||  ||  || selectedValue == "plt" || selectedValue == "skt" || selectedValue == "wlt" -->
+ 
+
+
+<script type="text/javascript">
+function fun(){
+    var ddl = document.getElementById("sports-list");
+    var selectedValue = ddl.options[ddl.selectedIndex].value;
+    $('#input-gender-female').attr('disabled', 'false');
+    
+
+    if (selectedValue == "crc") {
+        $('#input-gender-female').attr('disabled', 'true');
+        $("input.tsize").attr("placeholder", "Max Accomodation = 16 players");
+      }
+    else if(selectedValue == "ath") {
+        $('#input-gender-female').attr('disabled', 'true');
+        $("input.tsize").attr("placeholder", "M: Min 1 & Max 10+ and W: Min 1 & Max 6+");
+
+    }
+    else if(selectedValue == "ftb") {
+        $('#input-gender-female').attr('disabled', 'true');
+        $("input.tsize").attr("placeholder", "Min 11 & Max 16 players");
+
+    }
+    else if(selectedValue == "hck"){
+      $('#input-gender-female').attr('disabled', 'true');
+      $("input.tsize").attr("placeholder", "Min 11 & Max 16 players");
+    }
+        else if(selectedValue == "plt"){
+      $('#input-gender-female').attr('disabled', 'true');
+      $("input.tsize").attr("placeholder", "Min 1 & Max 10 players");
+    }
+        else if(selectedValue == "skt"){
+      $('#input-gender-female').attr('disabled', 'true');
+      $("input.tsize").attr("placeholder", "Min 1 & Max 13 players");
+    }
+        else if(selectedValue == "wlt"){
+      $('#input-gender-female').attr('disabled', 'true');
+      $("input.tsize").attr("placeholder", "Min 1 & Max 10 players");
+    }
+            else if(selectedValue == "volley"){
+      $('#input-gender-female').attr('disabled', 'false');
+      $("input.tsize").attr("placeholder", "Min 6 & Max 12 players");
+    }
+            else if(selectedValue == "tko"){
+      $('#input-gender-female').attr('disabled', 'false');
+      $("input.tsize").attr("placeholder", "Min 1 & Max 10+ players upto 22");
+    }
+            else if(selectedValue == "tnn"){
+      $('#input-gender-female').attr('disabled', 'false');
+      $("input.tsize").attr("placeholder", "M: Min 3 & Max 4 and W: Min 2 & Max 3");
+    }
+            else if(selectedValue == "swm"){
+      $('#input-gender-female').attr('disabled', 'false');
+      $("input.tsize").attr("placeholder", "M: Min 1 & Max 10+ and W: Min 1 & Max 6+");
+    }
+            else if(selectedValue == "sq"){
+      $('#input-gender-female').attr('disabled', 'false');
+      $("input.tsize").attr("placeholder", "M: Min 3 & Max 4 and W: Min 2 & Max 4");
+    }
+            else if(selectedValue == "spq"){
+      $('#input-gender-female').attr('disabled', 'false');
+      $("input.tsize").attr("placeholder", "Min 2 & Max 3 players");
+    }
+            else if(selectedValue == "kho"){
+      $('#input-gender-female').attr('disabled', 'false');
+      $("input.tsize").attr("placeholder", "Min 9 & Max 12 players");
+    }
+            else if(selectedValue == "hdb"){
+      $('#input-gender-female').attr('disabled', 'false');
+      $("input.tsize").attr("placeholder", "Min 7 & Max 12 players");
+    }
+            else if(selectedValue == "che"){
+      $('#input-gender-female').attr('disabled', 'false');
+      $("input.tsize").attr("placeholder", "Min 4 & Max 5 players");
+    }
+            else if(selectedValue == "car"){
+      $('#input-gender-female').attr('disabled', 'false');
+      $("input.tsize").attr("placeholder", "Max: 2 players");
+    }
+            else if(selectedValue == "bdm"){
+      $('#input-gender-female').attr('disabled', 'false');
+      $("input.tsize").attr("placeholder", "M: Min 3 & Max 4 and W: Min 2 & Max 3");
+    }
+            else if(selectedValue == "nan"){
+      $('#input-gender-female').attr('disabled', 'false');
+      
+      $("input.tsize").attr("placeholder", "Select a Sport first!");
+    }
+
+
+
+}
+
+
+</script>
 <!-- Select Basic -->
    
 <div class="form-group"> 
@@ -115,32 +213,38 @@
     <div class="col-md-9 selectContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-    <select name="sports" class="form-control selectpicker" style="text-align: center;" required>
-      <option value=" " >Please select your sport</option>
-      <option>Athletics</option>
-        <option>Badminton</option>
-        <option>Basketball</option>
-        <option>Carrom</option>
-        <option>Chess</option>
-        <option>Cricket</option>
-        <option>Football</option>
-        <option>Handball</option>
-        <option>Hockey</option>
-        <option>Kho-kho</option>
-        <option>Lawn Tennis</option>
-        <option>Powerlifting</option>
-        <option>Skating</option>
-        <option>Sports Quiz</option>
-        <option>Squash</option>
-        <option>Swimming</option>
-        <option>Table Tennis</option>
-        <option>Taekwondo</option>
-        <option>Volleyball</option>
-        <option>Weightlifting</option>
+    <select onchange="fun()" name="sports" class="form-control selectpicker" id="sports-list" style="text-align: center;" required>
+      <option value="nan" >Please select your sport</option>
+    <!-- d -->  <option value="ath">Athletics</option>
+        <option value="bdm">Badminton</option><!-- d -->
+        <option value="btb">Basketball</option><!-- d -->
+        <option value="car">Carrom</option><!-- d -->
+        <option value="che">Chess</option><!-- d --><!-- d -->
+        <option value="crc">Cricket</option><!-- d -->
+        <option value="ftb">Football</option><!-- d -->
+        <option value="hdb">Handball</option><!-- d -->
+        <option value="hck">Hockey</option><!-- d -->
+        <option value="kho">Kho-kho</option><!-- d -->
+        <option value="lt">Lawn Tennis</option><!-- d -->
+        <option value="plt">Powerlifting</option><!-- d -->
+        <option value="skt">Skating</option><!-- d -->
+        <option value="spq">Sports Quiz</option><!-- d -->
+        <option value="sq">Squash</option><!-- d -->
+        <option value="swm">Swimming</option><!-- d -->
+        <option value="tnn">Table Tennis</option><!-- d -->
+        <option value="tko">Taekwondo</option><!-- d -->
+        <option value="volley">Volleyball</option><!-- d -->
+        <option value="wlt">Weightlifting</option><!-- d -->
     </select>
-  </div>
+  </div> <!-- <input type="button" onclick="fun()" value="Select" style="float: right;"> -->
 </div>
 </div>
+
+<script type="text/javascript">
+  $('document').ready(function(){
+    
+  });
+</script>
 
 <!-- Text input-->
        <div class="form-group">
@@ -151,7 +255,7 @@
              </label>
         </div>
         <div class="col-sm-3">
-             <label class="radio-inline">
+             <label class="radio-inline input-radio-female">
                   <input name="gender" id="input-gender-female" value="Female" type="radio" />Female
              </label>
          </div>
@@ -199,7 +303,7 @@
     <div class="col-md-9 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="fa fa-users" aria-hidden="true"></i></span>
-  <input name="team_size" placeholder="Enter your team size" class="form-control"  type="text">
+  <input name="team_size" placeholder="Select a Sport first!" class="form-control tsize" id="ts"  type="text">
     </div>
   </div>
 </div>
@@ -210,301 +314,69 @@
 </div>
 
 
+
 <!-- Text input-->
-<div class="form5" style="background-color: rgba(245, 245, 245,0.8); border-radius:15px; border: 1px solid #ddd; padding: 20px; ">
-<div class="form-group ">
-      <label class="col-md-2 control-label">Player 1</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player1" placeholder="" class="form-control" type="text">
-    </div>
-  </div>
-  <label class="col-md-2 control-label">Contact 1</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact1" placeholder="" class="form-control" type="text" id="contact1">
-  <span class="contact">enter valid number</span>
-    </div>		
-  </div>
-</div>
+<div class="form5" style="background-color: rgba(245, 245, 245,0.8); border-radius:15px; border: 1px solid #ddd; padding: 20px; overflow: auto; z-index: 0; padding-bottom: 30px;">
 
-<div class="form-group ">
-      <label class="col-md-2 control-label">Player 2</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player2" placeholder="" class="form-control" type="text">
-    </div>
-  </div>
-  <label class="col-md-2 control-label">Contact 2</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact2" placeholder="" class="form-control" type="text" id="contact2">
-  <span class="contact">enter valid number</span>
-    </div>
-  </div>
-</div>
-
-<div class="form-group">
-      <label class="col-md-2 control-label">Player 3</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player3" placeholder="" class="form-control" type="text">
-    </div>
-  </div>
-  <label class="col-md-2 control-label">Contact 3</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact3" placeholder="" class="form-control" type="text" id="contact3">
-  <span class="contact">enter valid number</span>
-    </div>
-  </div>
-</div>
-
-<div class="form-group">
-      <label class="col-md-2 control-label">Player 4</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player4" placeholder="" class="form-control" type="text">
-    </div>
-  </div>
-  <label class="col-md-2 control-label">Contact 4</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact4" placeholder="" class="form-control" type="text" id="contact4">
-  <span class="contact">enter valid number</span>
-    </div>
-  </div>
-</div>
-
-<div class="form-group">
-      <label class="col-md-2 control-label">Player 5</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player5" placeholder="" class="form-control" type="text">
-    </div>
-  </div>
-  <label class="col-md-2 control-label">Contact 5</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact5" placeholder="" class="form-control" type="text" id="contact5">
-  <span class="contact">enter valid number</span>
-    </div>
-  </div>
-</div>
-
-<div class="form-group">
-      <label class="col-md-2 control-label">Player 6</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player6" placeholder="" class="form-control" type="text">
-    </div>
-  </div>
-  <label class="col-md-2 control-label">Contact 6</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact6" placeholder="" class="form-control" type="text" id="contact6">
-  <span class="contact">enter valid number</span>
-    </div>
-  </div>
-</div>
-
-<div class="form-group">
-      <label class="col-md-2 control-label">Player 7</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player7" placeholder="" class="form-control" type="text">
-    </div>
-  </div>
-  <label class="col-md-2 control-label">Contact 7</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact7" placeholder="" class="form-control" type="text" id="contact7">
-  <span class="contact">enter valid number</span>
-    </div>
-  </div>
-</div>
-
-<div class="form-group">
-      <label class="col-md-2 control-label">Player 8</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player8" placeholder="" class="form-control" type="text">
-    </div>
-  </div>
-  <label class="col-md-2 control-label">Contact 8</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact8" placeholder="" class="form-control" type="text" id="contact8">
-  <span class="contact">enter valid number</span>
-    </div>
-  </div>
-</div>
-
-<div class="form-group">
-      <label class="col-md-2 control-label">Player 9</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player9" placeholder="" class="form-control" type="text">
-    </div>
-  </div>
-  <label class="col-md-2 control-label">Contact 9</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact9" placeholder="" class="form-control" type="text" id="contact9">
-  <span class="contact">enter valid number</span>
-    </div>
-  </div>
-</div>
-
-<div class="form-group">
-      <label class="col-md-2 control-label">Player 10</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player10" placeholder="" class="form-control" type="text">
-    </div>
-  </div>
-  <label class="col-md-2 control-label">Contact 10</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact10" placeholder="" class="form-control" type="text" id="contact10">
-   <span class="contact">enter valid number</span>
-   </div>
-  </div>
-</div>
-
-<div class="form-group">
-      <label class="col-md-2 control-label">Player 11</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player11" placeholder="" class="form-control" type="text">
-    </div>
-  </div>
-  <label class="col-md-2 control-label">Contact 11</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact11" placeholder="" class="form-control" type="text" id="contact11">
-   <span class="contact">enter valid number</span>
-   </div>
-  </div>
-</div>
-
-<div class="form-group">
-      <label class="col-md-2 control-label">Player 12</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player12" placeholder="" class="form-control" type="text">
-    </div>
-  </div>
-  <label class="col-md-2 control-label">Contact 12</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact12" placeholder="" class="form-control" type="text" id="contact12">
-   <span class="contact">enter valid number</span>
-   </div>
-  </div>
-</div>
-
-<div class="form-group">
-      <label class="col-md-2 control-label">Player 13</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player13" placeholder="" class="form-control" type="text">
-    </div>
-  </div>
-  <label class="col-md-2 control-label">Contact 13</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact13" placeholder="" class="form-control" type="text" id="contact13">
-  <span class="contact">enter valid number</span>
-    </div>
-  </div>
-</div>
-
-<div class="form-group">
-      <label class="col-md-2 control-label">Player 14</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player14" placeholder="" class="form-control" type="text">
-    </div>
-  </div>
-  <label class="col-md-2 control-label">Contact 14</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact14" placeholder="" class="form-control" type="text" id="contact14">
-  <span class="contact">enter valid number</span>
-    </div>
-  </div>
-</div>
-
-<div class="form-group">
-      <label class="col-md-2 control-label">Player 15</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player15" placeholder="" class="form-control" type="text">
-    </div>
-  </div>
-  <label class="col-md-2 control-label">Contact 15</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact15" placeholder="" class="form-control" type="text" id="contact15">
-  <span class="contact">enter valid number</span>
-    </div>
-  </div>
-</div>
-
-<div class="form-group">
-      <label class="col-md-2 control-label">Player 16</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="player16" placeholder="" class="form-control" type="text">
-    </div>
-  </div>
-  <label class="col-md-2 control-label">Contact 16</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact16" placeholder="" class="form-control" type="text" id="contact16">
-  <span class="contact">enter valid number</span>
-    </div>
-  </div>
-</div>
 <br>
 
-<button type="submit" class="button5" id="button5" name="submit" value="Sign-Up" style="margin: 10px; position: relative;">SUBMIT<span class="glyphicon glyphicon-send"></span></button>
+
 
 
 </div>
+
+<script type="text/javascript">
+  function addNew(ind){
+    $('.button5.submit').addClass("hidden");
+
+    // var cls = document.getElementById('btn'+ toString(num));
+    num = num + 1 ;
+    
+    // num = num + 1;
+    
+
+    
+  searchResultsMarkup_2 = "<div class='form-group addplayer'><label class='col-md-2 control-label'>Player " + num + "</label><div class='col-md-4 inputGroupContainer'><div class='input-group'><span class='input-group-addon'><i class='glyphicon glyphicon-user'></i></span><input name='player" + num + "' placeholder='' class='form-control' type='text'></div></div> <label class='col-md-2 control-label'>Contact "+ num +"</label><div class='col-md-4 inputGroupContainer'><div class='input-group'> <span class='input-group-addon'><i class='glyphicon glyphicon-earphone'></i></span> <input name='contact" + num + "' placeholder='' class='form-control' type='text' id='contact"+ num +"'> </div></div></div>";
+
+  $(".form5").append(searchResultsMarkup_2);
+  $(".form5").append(btnMarkup);
+
+
+
+
+  // cls.addClass('hidden');
+  // $(".form5").append("<input class='btn btn-primary btn"+ind+"' type='button' onclick='addNew(" + ind + ")' value='ADD NEW PLAYER' style='float: right; margin-right:15px; margin-top10px;'>");
+
+}
+
+</script>
+
+<script type="text/javascript">
+
+  $(".form5").append("<span class='addnew'><input class='addnew button5' type='button' onclick='addNew(" + num + ")' value='ADD NEW PLAYER' style='padding:8px ;float:right;margin-right:15px; margin-top:10px;'><br><br><br></span>");
+
+  var count = 1;
+  var i = 0;
+  var num = 13;
+  searchResultsMarkup = "";
+  for(i=count; i <= num ; i++){
+    
+    searchResultsMarkup += "<div class='form-group'><label class='col-md-2 control-label'>Player " + i + "</label><div class='col-md-4 inputGroupContainer'><div class='input-group'><span class='input-group-addon'><i class='glyphicon glyphicon-user'></i></span><input name='player" + i + "' placeholder='' class='form-control' type='text'></div></div> <label class='col-md-2 control-label'>Contact "+ i +"</label><div class='col-md-4 inputGroupContainer'><div class='input-group'> <span class='input-group-addon'><i class='glyphicon glyphicon-earphone'></i></span> <input name='contact" + i + "' placeholder='' class='form-control' type='text' id='contact"+ i +"'> <span class='contact'>enter valid number</span></div></div></div>";
+
+    
+
+  }
+
+  $(".form5").append(searchResultsMarkup);
+
+  btnMarkup = "<button type='submit' class='button5 submit' id='button5' name='submit' value='Sign-Up' style='margin: 10px 30px 10px 10px ; position: relative;'>SUBMIT<span class='glyphicon glyphicon-send'></span></button>";
+
+  $(".form5").append(btnMarkup);
+
+  count = num;
+
+</script>
+
 
 
 
@@ -933,6 +805,10 @@ $myContact16.focusout(function() {
           window.alert("Your team have been registered");
   })
 </script>
+<style type="text/css">
+  input {margin-bottom: 15px;}
+  .addnew{}
+</style>
 
 
 </body> 

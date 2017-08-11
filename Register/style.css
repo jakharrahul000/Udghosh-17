@@ -685,8 +685,8 @@ ul.social-icons {
     }
 
     .form5 {
-     position: relative;  display: inline-block; float: left; width: 50%;
-    margin: 0 20px;
+     position: relative;  display: inline-block; float: left; width: 55%;
+    margin-bottom: 80px ;
     }
 @media screen and (max-width: 600px) {
     .form1 {
