@@ -114,16 +114,18 @@
 
 
 <script type="text/javascript">
-function fun(sender){
-    // var ddl = document.getElementById("sports-list");
-    var selectedValue = sender.value;
+function fun(){
+    var ddl = document.getElementById("sports-list");
+    var selectedValue = ddl.options[ddl.selectedIndex].value;
+    $('#input-gender-female').attr('disabled', 'false');
     
+
     if (selectedValue == "crc") {
         $('#input-gender-female').attr('disabled', 'true');
         $("input.tsize").attr("placeholder", "Max Accomodation = 16 players");
       }
     else if(selectedValue == "ath") {
-        $('#input-gender-female').removeAttr('disabled');
+        $('#input-gender-female').attr('disabled', 'true');
         $("input.tsize").attr("placeholder", "M: Min 1 & Max 10+ and W: Min 1 & Max 6+");
 
     }
@@ -149,56 +151,53 @@ function fun(sender){
       $("input.tsize").attr("placeholder", "Min 1 & Max 10 players");
     }
             else if(selectedValue == "volley"){
-      $('#input-gender-female').removeAttr('disabled');
+      $('#input-gender-female').attr('disabled', 'false');
       $("input.tsize").attr("placeholder", "Min 6 & Max 12 players");
     }
             else if(selectedValue == "tko"){
-      $('#input-gender-female').removeAttr('disabled');
+      $('#input-gender-female').attr('disabled', 'false');
       $("input.tsize").attr("placeholder", "Min 1 & Max 10+ players upto 22");
     }
             else if(selectedValue == "tnn"){
-      $('#input-gender-female').removeAttr('disabled');
+      $('#input-gender-female').attr('disabled', 'false');
       $("input.tsize").attr("placeholder", "M: Min 3 & Max 4 and W: Min 2 & Max 3");
     }
             else if(selectedValue == "swm"){
-      $('#input-gender-female').removeAttr('disabled');
+      $('#input-gender-female').attr('disabled', 'false');
       $("input.tsize").attr("placeholder", "M: Min 1 & Max 10+ and W: Min 1 & Max 6+");
     }
             else if(selectedValue == "sq"){
-      $('#input-gender-female').removeAttr('disabled');
+      $('#input-gender-female').attr('disabled', 'false');
       $("input.tsize").attr("placeholder", "M: Min 3 & Max 4 and W: Min 2 & Max 4");
     }
             else if(selectedValue == "spq"){
-      $('#input-gender-female').removeAttr('disabled');
+      $('#input-gender-female').attr('disabled', 'false');
       $("input.tsize").attr("placeholder", "Min 2 & Max 3 players");
     }
             else if(selectedValue == "kho"){
-      $('#input-gender-female').removeAttr('disabled');
+      $('#input-gender-female').attr('disabled', 'false');
       $("input.tsize").attr("placeholder", "Min 9 & Max 12 players");
     }
             else if(selectedValue == "hdb"){
-      $('#input-gender-female').removeAttr('disabled');
+      $('#input-gender-female').attr('disabled', 'false');
       $("input.tsize").attr("placeholder", "Min 7 & Max 12 players");
     }
             else if(selectedValue == "che"){
-      $('#input-gender-female').removeAttr('disabled');
+      $('#input-gender-female').attr('disabled', 'false');
       $("input.tsize").attr("placeholder", "Min 4 & Max 5 players");
     }
             else if(selectedValue == "car"){
-      $('#input-gender-female').removeAttr('disabled');
+      $('#input-gender-female').attr('disabled', 'false');
       $("input.tsize").attr("placeholder", "Max: 2 players");
     }
             else if(selectedValue == "bdm"){
-      $('#input-gender-female').removeAttr('disabled');
+      $('#input-gender-female').attr('disabled', 'false');
       $("input.tsize").attr("placeholder", "M: Min 3 & Max 4 and W: Min 2 & Max 3");
     }
             else if(selectedValue == "nan"){
-      $('#input-gender-female').removeAttr('disabled');
+      $('#input-gender-female').attr('disabled', 'false');
       
       $("input.tsize").attr("placeholder", "Select a Sport first!");
-    }
-    else {
-      $('#input-gender-female').removeAttr('disabled');
     }
 
 
@@ -214,7 +213,7 @@ function fun(sender){
     <div class="col-md-9 selectContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-    <select onchange="fun(this)" name="sports" class="form-control selectpicker" id="sports-list" style="text-align: center;" required>
+    <select onchange="fun()" name="sports" class="form-control selectpicker" id="sports-list" style="text-align: center;" required>
       <option value="nan" >Please select your sport</option>
     <!-- d -->  <option value="ath">Athletics</option>
         <option value="bdm">Badminton</option><!-- d -->

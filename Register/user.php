@@ -28,7 +28,22 @@ function NewUser()
 	$player14 = $_POST['player14']; $contact14 = $_POST['contact14'];
 	$player15 = $_POST['player15']; $contact15 = $_POST['contact15'];
 	$player16 = $_POST['player16']; $contact16 = $_POST['contact16'];
-	$query = "INSERT INTO sports_form (username,college,sports,gender,captain,email,contact,team_size,player1,contact1,player2,contact2,player3,contact3,player4,contact4,player5,contact5,player6,contact6,player7,contact7,player8,contact8,player9,contact9,player10,contact10,player11,contact11,player12,contact12,player13,contact13,player14,contact14,player15,contact15,player16,contact16) VALUES ('$username','$college','$sports','$gender','$captain','$email','$contact','$team_size','$player1','$contact1','$player2','$contact2','$player3','$contact3','$player4','$contact4','$player5','$contact5','$player6','$contact6','$player7','$contact7','$player8','$contact8','$player9','$contact9','$player10','$contact10','$player11','$contact11','$player12','$contact12','$player13','$contact13','$player14','$contact14','$player15','$contact15','$player16','$contact16')"; 
+	$player17 = $_POST['player17']; $contact17 = $_POST['contact17'];
+	$player18 = $_POST['player18']; $contact18 = $_POST['contact18'];
+	$player19 = $_POST['player19']; $contact19 = $_POST['contact19'];
+	$player20 = $_POST['player20']; $contact20 = $_POST['contact20'];
+	$player21 = $_POST['player21']; $contact21 = $_POST['contact21'];
+	$player22 = $_POST['player22']; $contact22 = $_POST['contact22'];
+	$player23 = $_POST['player23']; $contact23 = $_POST['contact23'];
+	$player24 = $_POST['player24']; $contact24 = $_POST['contact24'];
+	$player25 = $_POST['player25']; $contact25 = $_POST['contact25'];
+	$player26 = $_POST['player26']; $contact26 = $_POST['contact26'];
+	$player27 = $_POST['player27']; $contact27 = $_POST['contact27'];
+	$player28 = $_POST['player28']; $contact28 = $_POST['contact28'];
+	$player29 = $_POST['player29']; $contact29 = $_POST['contact29'];
+	$player30 = $_POST['player30']; $contact30 = $_POST['contact30'];
+
+	$query = "INSERT INTO sports_form (username,college,sports,gender,captain,email,contact,team_size,player1,contact1,player2,contact2,player3,contact3,player4,contact4,player5,contact5,player6,contact6,player7,contact7,player8,contact8,player9,contact9,player10,contact10,player11,contact11,player12,contact12,player13,contact13,player14,contact14,player15,contact15,player16,contact16,player17,contact17,player18,contact18,player19,contact19,player20,contact20,player21,contact21,player22,contact22,player23,contact23,player24,contact24,player25,contact25,player26,contact26,player27,contact27,player28,contact28,player29,contact29,player30,contact30) VALUES ('$username','$college','$sports','$gender','$captain','$email','$contact','$team_size','$player1','$contact1','$player2','$contact2','$player3','$contact3','$player4','$contact4','$player5','$contact5','$player6','$contact6','$player7','$contact7','$player8','$contact8','$player9','$contact9','$player10','$contact10','$player11','$contact11','$player12','$contact12','$player13','$contact13','$player14','$contact14','$player15','$contact15','$player16','$contact16','$player17','$contact17','$player18','$contact18','$player19','$contact19','$player20','$contact20','$player21','$contact21','$player22','$contact22','$player23','$contact23','$player24','$contact24','$player25','$contact25','$player26','$contact26','$player27','$contact27','$player28','$contact28','$player29','$contact29','$player30','$contact30')"; 
 	$data = mysql_query ($query)or die(mysql_error()); 
 	if($data) 
 		{ 
