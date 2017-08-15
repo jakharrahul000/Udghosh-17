@@ -53,6 +53,7 @@
         font-family: 'Archivo', sans-serif;
         font-weight: 300;
         color: #fff;
+        text-align: center;
     }
 
     .card {
@@ -569,12 +570,17 @@
     opacity: 1;
 }
 
+.contact {
+    display: flex;
+    position: relative;
+}
+
 
 @media only screen and (max-width: 767px){
                     .offset {margin-left: 74px;}
                     .offset1 {margin-left: 37px;}
     .offset-one{margin-left: 74px;}
-            .ch-img-1, .ch-img-2, .ch-img-3, .ch-img-4, .ch-img-5, .ch-img-6, .ch-img-7, .ch-img-8, .ch-img-9, .ch-img-10, .ch-img-11, .ch-img-12, .ch-img-13 {
+            .ch-img-1, .ch-img-2, .ch-img-3, .ch-img-4, .ch-img-5, .ch-img-6, .ch-img-7, .ch-img-8, .ch-img-9, .ch-img-10, .ch-img-11, .ch-img-12, .ch-img-13, .ch-img-14, .ch-img-15,.ch-img-16, .ch-img-17, .ch-img-18 {
         width: 200px;
         height: 200px;
     }    
@@ -598,7 +604,7 @@
                     .offset {margin-left: 120px;}
                     .offset1 {margin-left: 60px;}
     .offset-one{margin-left: 230px;}
-            .ch-img-1, .ch-img-2, .ch-img-3, .ch-img-4, .ch-img-5, .ch-img-6, .ch-img-7, .ch-img-8, .ch-img-9, .ch-img-10, .ch-img-11, .ch-img-12, .ch-img-13 {
+            .ch-img-1, .ch-img-2, .ch-img-3, .ch-img-4, .ch-img-5, .ch-img-6, .ch-img-7, .ch-img-8, .ch-img-9, .ch-img-10, .ch-img-11, .ch-img-12, .ch-img-13, .ch-img-14, .ch-img-15,.ch-img-16, .ch-img-17, .ch-img-18 {
         width: 200px;
         height: 200px;
     }    
@@ -607,11 +613,12 @@
 }
 
         @media only screen and (min-width: 992px) {
-                .offset {margin-left: 140px;}
-    .offset-one{margin-left: 320px;}
-    h2.head{margin-right: 100px;}
+                .offset {margin: auto;}
+                .offset1 {margin: auto;}
+    .offset-one{margin:auto; }
+    h2.head{margin:auto;}
 
-        .ch-img-1, .ch-img-2, .ch-img-3, .ch-img-4, .ch-img-5, .ch-img-6, .ch-img-7, .ch-img-8, .ch-img-9, .ch-img-10, .ch-img-11, .ch-img-12, .ch-img-13 {
+        .ch-img-1, .ch-img-2, .ch-img-3, .ch-img-4, .ch-img-5, .ch-img-6, .ch-img-7, .ch-img-8, .ch-img-9, .ch-img-10, .ch-img-11, .ch-img-12, .ch-img-13, .ch-img-14, .ch-img-15,.ch-img-16, .ch-img-17, .ch-img-18{
         width: 240px;
         height: 240px;
     }
@@ -623,12 +630,12 @@
 
 
         @media only screen and (min-width: 1200px) {
-                .offset {margin-left: 250px;}
-                .offset1 {margin-left: 125px;}
-    .offset-one{margin-left: 400px;}
-    h2.head{margin-right: 100px;}
+                .offset {margin:auto;}
+                .offset1 {margin:auto;}
+    .offset-one{margin:auto;}
+    h2.head{margin:auto;}
 
-        .ch-img-1, .ch-img-2, .ch-img-3, .ch-img-4, .ch-img-5, .ch-img-6, .ch-img-7, .ch-img-8, .ch-img-9, .ch-img-10, .ch-img-11, .ch-img-12, .ch-img-13 {
+        .ch-img-1, .ch-img-2, .ch-img-3, .ch-img-4, .ch-img-5, .ch-img-6, .ch-img-7, .ch-img-8, .ch-img-9, .ch-img-10, .ch-img-11, .ch-img-12, .ch-img-13, .ch-img-14, .ch-img-15,.ch-img-16, .ch-img-17, .ch-img-18 {
         width: 240px;
         height: 240px;
     }
