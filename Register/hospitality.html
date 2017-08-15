@@ -1,0 +1,232 @@
+<!DOCTYPE HTML> 
+<html> 
+<head> 
+<style >
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+.content{margin-top: 90px;}
+/* Style the tab */
+div.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 20%;
+    height: 250px;
+    margin: auto;
+    margin-right: 10px;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+div.tab button.active {
+    background-color: #ccc;
+    border-right :2px red solid;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    /*border: 1px solid #ccc;*/
+    width: 70%;
+    border-left: none;
+    height: 500px;
+}
+</style>
+
+  <title>Sign-Up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- stylesheet -->
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://use.fontawesome.com/fd2ef9ab09.js"></script>
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="js/main.js"></script>
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    </style> 
+</head>
+<body id="body-color" style="overflow: auto;background-image: url('formback.png'); background-position: center; background-size: 100%;  background-attachment: fixed; height: 900px;"> 
+<div class="topnav" id="myTopnav">
+  <div class="navbar-header"><a class="navbar-brand" href="../index.html"><img src="img/logo.png" >
+        </a></div>
+
+<span class="cl-effect-1"><a href="#">EVENTS</a></span>
+  <span class="cl-effect-1"><a href="#">GALLERY</a></span>
+  <span class="cl-effect-1"><a href="#">TEAM</a></span>
+  <span class="cl-effect-1"><a href="#">SPONSORS</a></span>
+  <a href="javascript:void(0);" style="font-size:15px; color: #333;" class="icon" onclick="myFunction()">&#9776;</a>
+        <a style="float:none; display: inline" href="signup.html"><button class="button button3">REGISTER</button></a>
+ 
+          <li class="faq"><a href="#" style="font-size: 13px; height: 40px; width: 49px; ">
+          <span class="fa-stack fa-lg" style="font-size: 1em;">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-question fa-stack-1x fa-inverse"></i><span style="text-align: center;padding-left: 30px; top:7px;">FAQs
+        </span></a></li>
+</div>
+
+
+<!-- Mobile navbar -->
+<nav class=" hidden-md hidden-lg navbar navbar-default  " >
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div  class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <a class="navbar-brand" href="../index.html" style="border-right:none;   margin-top: 8px; padding:5px;"><img src="img/logo.png"  >
+        </a>
+        </div>
+        <!-- Collection of nav links and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="cl-effect-1"><a href="../index.html">HOME</a></li>
+                <li class="cl-effect-1"><a href="#">EVENTS</a></li>
+                <li class="cl-effect-1"><a href="#">GALLERY</a></li>
+                <li class="cl-effect-1"><a href="#">TEAM</a></li>
+                <li class="cl-effect-1"><a href="#">SPONSORS</a></li>
+
+
+            </ul>
+         
+        </div>
+    </nav>
+    <div class="content">
+<h1><center> HOSPITALITY INFORMATION</center> </h1>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'FAQS')" id="defaultOpen">FAQS</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Checklist</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Accommodation</button>
+  <button class="tablinks" onclick="openCity(event, 'iit')">Reaching IIT Kanpur</button>
+  
+</div>
+
+<div id="FAQS" class="tabcontent">
+  <h2>FAQS</h2>
+  <h4>What is the procedure to be followed after reaching IITK?</h4>
+  <p>You need to report to the Hospitality Desk, Students Activity Centre (SAC) along with your college identity card.<br>
+        You will have to produce the reciept of your online payment and a recent passport size photograph.
+    <br>   Booklet will act as your identity card in campus.
+    <br>In case of a big contingent, contingent leader needs to present the ID cards of all the people in his contingent at the hospitality desk along with a list of all the people. Accommodation would be strictly on shared basis.
+    </p>
+    <h4>Can two participants be from different colleges in a team event?</h4>
+     <p>No, Udghosh does not allow cross participation from colleges in a team event.</p>
+    <h4> Can I get accommodation on 10th october or before although the festival starts from 12th october?</h4>
+    <p>No, accommodation will be provided from 11th evening. All the participants coming before can stay in hotels outside IIT Kanpur.</p>
+    <h4>I dont want accommodation because I belong to kanpur , am I expected to pay the registration amount?</h4>
+    <p>Yes, the registration amount has to be paid by every participant. The accommodation and messing facilities are complimentary.</p>
+   
+</div>
+
+<div id="Paris" class="tabcontent">
+   <h2><center> CHECKLIST</center></h2>
+    Please ensure you have the following items before coming to hospitality desk:
+    <br><br>
+    <ol>
+      <li>Hard copy of filled registration forms, with no spelling mistake
+      <li>Hard copy of NOC
+      <li>Hard copy of payment/transaction details
+      <li>2 photographs of each student
+      <li>College identity card per participant
+      <li> Account details for security refund
+      </ol>
+    </div>
+
+<div id="Tokyo" class="tabcontent">
+  <h2><center> Accommodation</center></h2>
+  <p>Accomodation will be provided from 11th evening. All the participants coming before can also stay in hotels outside IIT Kanpur.<br>
+  You are required to report at the Hospitality desk in SAC (Students Activity Center) as soon as you arrive at the campus. Look out for directions in the campus to reach the hospitality desk.<br>
+  All participants are required to carry their original college identity cards with photo proof to avail the accommodation and messing facilities in the campus and are required to follow the Rules and Regulations as mentioned on the respective page.<br>
+  Kindly note that the accommodation is strictly on a shared basis and any requests for individual rooms or any complaints in this regard shall not be entertained.<br>
+  You will be provided messing facility in the campus itself. Apart from the regular messing facilities there are a number of canteens in the campus which can cater to your eating requirements.<br>
+  The fees for registration is INR 1500 along with a security deposit of INR 200 per participant.
+  Mode of payment is online.<br>
+  This is the registration fees for Udghosh, Not for the facilities provided by Udghosh i.e. if anyone does not want to take accommodation or food still he/she has to pay the registration fees.</p> 
+</div>
+
+<div id="iit" class="tabcontent">
+  <h2><center> Reaching IIT Kanpur</center></h2>
+  <p>From Kanpur Central Railway Station :
+  Taxis and autos are easily available from the Cantt side of the Kanpur Central Railway Station (from Platform number 1 side). There is a pre-paid auto and taxi booth.<br>
+  The rates are Rs. 300 for a taxi and Rs. 200 for an auto. Sometimes you may be able to negotiate a few rupees less with the driver, if you don't go to the pre-paid booth. For convenience, fix up the rates with the driver before you board the auto or the taxi.<br>
+  We will also arrange for some buses from the Kanpur Central Railway Station to pick up the participants. These would be available on the Platform 1 side of the Railway Station. However since the number of buses is limited, you might have to arrange for your own conveyance.<br>
+  From the Bus Stand:
+  Buses will not be available here so you will have to arrange for your own conveyance.<br>
+  Autos are easily available from the Bus stand to IIT Kanpur.<br>
+  The rates are Rs 200 for an auto. For convenience, fix up the rates with the driver before you board the auto.</p> 
+</div>
+
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+<div class="foot">
+    <div class="footer-social-icons">
+    <ul class="social-icons">
+        <li><a href="https://www.facebook.com/udghosh.iitk/" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/udghoshiitk" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.youtube.com/user/udghosh11" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+        <li><a href="https://www.linkedin.com/company-beta/7575911/" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://plus.google.com/101958681892074759002?hl=en" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+        
+    </ul>
+
+</div>
+<div id="creative" style="color: #cccccc;  float: right; margin-right: 30px;margin-top:7px;"><i class="fa fa-copyright" aria-hidden="true"></i><span style="padding-left: 5px;font-size: 13px;">Creatives Udghosh 2017</span></div>
+</div>
+
+</body> 
+</html>
+
+ 
