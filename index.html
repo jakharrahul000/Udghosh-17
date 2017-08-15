@@ -2,7 +2,7 @@
 <head>
 	<title>Udghosh'17</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="utf-8" >
+  <meta charset="UTF-8">
 	<!-- stylesheet -->
 	<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32"> 
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -19,13 +19,24 @@
   		padding: 0;
   	}
 
+    html {
+      overflow: hidden;
+      height: 100%;
+    }
+.body {
+      background-color: rgba(35, 49, 74, 0.9);
+      top:0;
+      bottom: 0;
+      position: absolute;
+    }
+
 
   	</style>
 
   	
 </head>
-<body >
-<div class="body" style="position: fixed;  background-image: url('img/homebackground.png'); background-repeat: no-repeat ; background-color: #333; background-size: 100%; ">
+<body  style="  background: url('img/background1.png') no-repeat ; background-size:100%;">
+<div class="body">
 	<!-- Navigation Bar -->
 	<div class="topnav" id="myTopnav">
   <div class="navbar-header"><a class="navbar-brand" href="#"><img src="img/logo.png" >
@@ -38,19 +49,15 @@
   <a href="javascript:void(0);" style="font-size:15px; color: #333;" class="icon" onclick="myFunction()">&#9776;</a>
         <a style="float:none; display: inline" href="Register/signup.html"><button class="button button3">REGISTER</button></a>
  
-          <li class="faq" ><a data-toggle="modal" data-target="#myModal" style="font-size: 13px; height: 40px; width: 49px; ">
+          <li class="faq" ><a data-toggle="modal" data-target="#myModal" href="#" style="font-size: 13px; height: 40px; width: 49px; ">
           <span class="fa-stack fa-lg" style="font-size: 1em;">
           <i class="fa fa-circle fa-stack-2x"></i>
           <i class="fa fa-question fa-stack-1x fa-inverse"></i><span style="text-align: center;padding-left: 30px; top:7px;">FAQs
         </span></a></li>
         
 
-
-
         
 </div>
-
-
 
 
 <nav class=" hidden-md hidden-lg navbar navbar-default  " >
@@ -93,7 +100,7 @@
     			<img class ="theme1" src="img/Dates.png" style="margin: auto; display:block;height:10%; width: 50%;" >
     			<div style="margin: auto; display: block; height: 20%; width: 25%; margin-top: 5%;">
     			<!-- Document icon by Icons8 -->
-				<a href="#" class="icons"><img src="https://png.icons8.com/document/office/80" title="Document" width="80" height="80"><span style="display: block; position:absolute; float: left; padding-left: 3px;">BROCHURE</span></a>
+				<a href="#" class="icons"><img src="https://png.icons8.com/document/office/80" title="Document" width="80" height="80"><span style="display: block; position:absolute; float: left; padding-left: 7px;">BROCHURE</span></a>
 					<!-- Video File icon by Icons8 -->
 				<a href="#" class="icons" style="float: right;"><img src="https://png.icons8.com/video-file/office/80" title="Video File" width="80" height="80"><span style="display:block;">VIDEO</span></a>
 				</div>
@@ -175,35 +182,36 @@
 
 </body>
 
-          <!-- Modal -->
+
+
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Frequently Asked Questions</h4>
+        <h4 class="modal-title" id="myModalLabel" style="color: #333;">Frequently Asked Questions</h4>
       </div>
-      <div class="modal-body">
+      <div class="modal-body" style="color: #333;">
         <h4><strong>Q.&nbsp;What is the procedure to be followed after reaching IITK?</strong></h4>
-        <p style="padding-left: 20px;">You need to report to the Hospitality Desk, Students Activity Centre (SAC) along with your college identity card. <br>You will have to produce the reciept of your online payment and a recent passport size photograph. <br>Booklet will act as your identity card in campus. <br>In case of a big contingent, contingent leader needs to present the ID cards of all the people in his contingent at the hospitality desk along with a list of all the people. Accommodation would be strictly on shared basis. </p>
+        <p style="padding-left: 20px; color: #333;">You need to report to the Hospitality Desk, Students Activity Centre (SAC) along with your college identity card. <br>You will have to produce the reciept of your online payment and a recent passport size photograph. <br>Booklet will act as your identity card in campus. <br>In case of a big contingent, contingent leader needs to present the ID cards of all the people in his contingent at the hospitality desk along with a list of all the people. Accommodation would be strictly on shared basis. </p>
 
 
                 <h4 class="q"><strong>Q.&nbsp;Can two participants be from different colleges in a team event? </strong></h4>
-        <p style="padding-left: 20px;">No, Udghosh does not allow cross participation from colleges in a team event.</p>
+        <p style="padding-left: 20px;color: #333;">No, Udghosh does not allow cross participation from colleges in a team event.</p>
 
 
                 <h4 class="q"><strong>Q.&nbsp;Can I get accommodation on 10th october or before although the festival starts from 12th october?</strong></h4>
-        <p style="padding-left: 20px;">No, accommodation will be provided from 11th evening. All the participants coming before can stay in hotels outside IIT Kanpur.</p>
+        <p style="padding-left: 20px;color: #333;">No, accommodation will be provided from 11th evening. All the participants coming before can stay in hotels outside IIT Kanpur.</p>
 
                 <h4 class="q"><strong>Q.&nbsp;I dont want accommodation because I belong to kanpur , am I expected to pay the registration amount?</strong></h4>
-        <p style="padding-left: 20px;">Yes, the registration amount has to be paid by every participant. The accommodation and messing facilities are complimentary.</p>
+        <p style="padding-left: 20px;color: #333;">Yes, the registration amount has to be paid by every participant. The accommodation and messing facilities are complimentary.</p>
 
 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
         <style type="text/css">
-          .q {margin-top: 40px;}
+          .q {margin-top: 30px;}
         </style>
         
       </div>
