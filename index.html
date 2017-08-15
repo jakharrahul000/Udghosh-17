@@ -2,7 +2,7 @@
 <head>
 	<title>Udghosh'17</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta charset="utf-8" >
 	<!-- stylesheet -->
 	<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32"> 
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -38,15 +38,19 @@
   <a href="javascript:void(0);" style="font-size:15px; color: #333;" class="icon" onclick="myFunction()">&#9776;</a>
         <a style="float:none; display: inline" href="Register/signup.html"><button class="button button3">REGISTER</button></a>
  
-          <li class="faq" ><a href="#" style="font-size: 13px; height: 40px; width: 49px; ">
+          <li class="faq" ><a data-toggle="modal" data-target="#myModal" style="font-size: 13px; height: 40px; width: 49px; ">
           <span class="fa-stack fa-lg" style="font-size: 1em;">
           <i class="fa fa-circle fa-stack-2x"></i>
           <i class="fa fa-question fa-stack-1x fa-inverse"></i><span style="text-align: center;padding-left: 30px; top:7px;">FAQs
         </span></a></li>
         
 
+
+
         
 </div>
+
+
 
 
 <nav class=" hidden-md hidden-lg navbar navbar-default  " >
@@ -170,4 +174,40 @@
 
 
 </body>
+
+          <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Frequently Asked Questions</h4>
+      </div>
+      <div class="modal-body">
+        <h4><strong>Q.&nbsp;What is the procedure to be followed after reaching IITK?</strong></h4>
+        <p style="padding-left: 20px;">You need to report to the Hospitality Desk, Students Activity Centre (SAC) along with your college identity card. <br>You will have to produce the reciept of your online payment and a recent passport size photograph. <br>Booklet will act as your identity card in campus. <br>In case of a big contingent, contingent leader needs to present the ID cards of all the people in his contingent at the hospitality desk along with a list of all the people. Accommodation would be strictly on shared basis. </p>
+
+
+                <h4 class="q"><strong>Q.&nbsp;Can two participants be from different colleges in a team event? </strong></h4>
+        <p style="padding-left: 20px;">No, Udghosh does not allow cross participation from colleges in a team event.</p>
+
+
+                <h4 class="q"><strong>Q.&nbsp;Can I get accommodation on 10th october or before although the festival starts from 12th october?</strong></h4>
+        <p style="padding-left: 20px;">No, accommodation will be provided from 11th evening. All the participants coming before can stay in hotels outside IIT Kanpur.</p>
+
+                <h4 class="q"><strong>Q.&nbsp;I dont want accommodation because I belong to kanpur , am I expected to pay the registration amount?</strong></h4>
+        <p style="padding-left: 20px;">Yes, the registration amount has to be paid by every participant. The accommodation and messing facilities are complimentary.</p>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <style type="text/css">
+          .q {margin-top: 40px;}
+        </style>
+        
+      </div>
+    </div>
+  </div>
+</div>
 </html>

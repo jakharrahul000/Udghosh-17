@@ -3,7 +3,7 @@
 <head>
   <title>Sign-Up</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="utf-8" >
   <!-- stylesheet -->
   <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -19,6 +19,26 @@
   		margin: 0;
   		padding: 0;
   	}
+#alink:link {
+    color: white;
+    text-decoration: none;
+}
+
+#alink:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#alink:hover {
+    color: rgba(60, 100, 120, 1);
+    background-color: transparent;
+}
+
+#alink:active {
+    color: rgba(60, 100, 120, 1);
+    background-color: transparent;
+}
+
   	</style>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -32,12 +52,12 @@
 
   <span class="cl-effect-1"><a href="#">EVENTS</a></span>
   <span class="cl-effect-1"><a href="#">GALLERY</a></span>
-  <span class="cl-effect-1"><a href="#">TEAM</a></span>
+  <span class="cl-effect-1"><a href="../contact.html">TEAM</a></span>
   <span class="cl-effect-1"><a href="#">SPONSORS</a></span>
   <a href="javascript:void(0);" style="font-size:15px; color: #333;" class="icon" onclick="myFunction()">&#9776;</a>
         <a style="float:none; display: inline" href="signup.html"><button class="button button3">REGISTER</button></a>
 
-          <li class="faq"><a href="#" style="font-size: 13px; height: 40px; width: 49px; ">
+          <li class="faq"><a data-toggle="modal" data-target="#myModal" style="font-size: 13px; height: 40px; width: 49px; ">
           <span class="fa-stack fa-lg" style="font-size: 1em;">
           <i class="fa fa-circle fa-stack-2x"></i>
           <i class="fa fa-question fa-stack-1x fa-inverse"></i><span style="text-align: center;padding-left: 30px; top:7px;">FAQs
@@ -66,10 +86,10 @@
                 <li class="cl-effect-1"><a href="../index.html">HOME</a></li>
                 <li class="cl-effect-1"><a href="#">EVENTS</a></li>
                 <li class="cl-effect-1"><a href="#">GALLERY</a></li>
-                <li class="cl-effect-1"><a href="#">TEAM</a></li>
+                <li class="cl-effect-1"><a href="../contact.html">TEAM</a></li>
                 <li class="cl-effect-1"><a href="#">SPONSORS</a></li>
 
-                
+
             </ul>
 
         </div>
@@ -84,10 +104,19 @@
 
 <div class ="row">
 <div class = "col-md-1" ><p></p></div>
- <div class="info col-md-5" style="border-radius:15px; border: 1px solid #ddd;background-color: rgba(245, 245, 245,0.8);float: left; position: relative; margin-top:100px;">
+ <div class="info col-md-5" style="border-radius:15px; border: 1px solid #3C6478;background-color: rgba(60, 100, 120, 0.8);float: left; position: relative; margin-top:100px;">
 
-<p style="text-align: center; font-size: 16px; color: #333; "><b>Registration Fee</b></p>
-<p style="text-align: center; font-size: 16px; color: #333; ">Registration fee per participant: Rs1500 + 200 (refundable security deposit). <br>This includes food, accommodation and entry in various events. </p>
+<h2 style="text-align: center;  color: #fcfcfc; "><b>General Rules</b></h2>
+
+<ul style = "margin-left : 2em; text-align: left; font-size: 20px; color: #FCFCFC; ">
+  <li style = "list-style-type:disc;">Registration fee per participant: <strong>Rs1500 + 200</strong> (refundable security deposit). This includes food, accommodation and entry in various events. </li>
+  <li style = "list-style-type:disc;">Matches shall be played according to the rules of respective International Federation as adopted from time to time by the All India Federation of the respective sport unless otherwise modified.</li>
+  <li style = "list-style-type:disc;">Decision made by Judges/Referee will be final and binding.</li>
+  <li style = "list-style-type:disc;">Rules and schedule are subject to change in the spirit of game and due to external factors.</li>
+  <li style = "list-style-type:disc;">Rules for individual sports are <strong><a href = "#" id = "alink" style="font-size:20px; ">here</a></strong>.</li>
+
+
+</ul>
 
 
 </div>
@@ -354,4 +383,41 @@ enableSubmitEvent();
 </script>
 
 </body>
+
+
+          <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Frequently Asked Questions</h4>
+      </div>
+      <div class="modal-body">
+        <h4><strong>Q.&nbsp;What is the procedure to be followed after reaching IITK?</strong></h4>
+        <p style="padding-left: 20px;">You need to report to the Hospitality Desk, Students Activity Centre (SAC) along with your college identity card. <br>You will have to produce the reciept of your online payment and a recent passport size photograph. <br>Booklet will act as your identity card in campus. <br>In case of a big contingent, contingent leader needs to present the ID cards of all the people in his contingent at the hospitality desk along with a list of all the people. Accommodation would be strictly on shared basis. </p>
+
+
+                <h4 class="q"><strong>Q.&nbsp;Can two participants be from different colleges in a team event? </strong></h4>
+        <p style="padding-left: 20px;">No, Udghosh does not allow cross participation from colleges in a team event.</p>
+
+
+                <h4 class="q"><strong>Q.&nbsp;Can I get accommodation on 10th october or before although the festival starts from 12th october?</strong></h4>
+        <p style="padding-left: 20px;">No, accommodation will be provided from 11th evening. All the participants coming before can stay in hotels outside IIT Kanpur.</p>
+
+                <h4 class="q"><strong>Q.&nbsp;I dont want accommodation because I belong to kanpur , am I expected to pay the registration amount?</strong></h4>
+        <p style="padding-left: 20px;">Yes, the registration amount has to be paid by every participant. The accommodation and messing facilities are complimentary.</p>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <style type="text/css">
+          .q {margin-top: 40px;}
+        </style>
+        
+      </div>
+    </div>
+  </div>
+</div>
 </html>

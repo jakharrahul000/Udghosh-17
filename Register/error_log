@@ -24,3 +24,65 @@
 [11-Aug-2017 13:21:11 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/signup_data.php on line 13
 [11-Aug-2017 18:49:28 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/signup_data.php on line 13
 [11-Aug-2017 18:51:40 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[12-Aug-2017 05:43:45 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/signup_data.php on line 13
+[12-Aug-2017 05:48:37 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[12-Aug-2017 06:08:15 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/signup_data.php on line 13
+[12-Aug-2017 06:08:18 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/signup_data.php on line 13
+[12-Aug-2017 06:08:25 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/signup_data.php on line 13
+[12-Aug-2017 06:08:31 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/signup_data.php on line 13
+[12-Aug-2017 06:08:44 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[12-Aug-2017 06:08:46 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[12-Aug-2017 06:08:53 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/signup_data.php on line 13
+[12-Aug-2017 06:08:58 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[12-Aug-2017 06:09:16 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/signup_data.php on line 13
+[12-Aug-2017 06:11:02 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/signup_data.php on line 13
+[12-Aug-2017 06:11:28 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[12-Aug-2017 06:11:45 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[12-Aug-2017 06:12:11 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/signup_data.php on line 13
+[12-Aug-2017 06:12:14 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/signup_data.php on line 13
+[12-Aug-2017 06:13:34 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/signup_data.php on line 13
+[12-Aug-2017 06:13:44 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[12-Aug-2017 06:14:06 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[12-Aug-2017 06:14:52 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[12-Aug-2017 10:11:07 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[12-Aug-2017 12:26:07 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[12-Aug-2017 12:27:25 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[12-Aug-2017 12:29:58 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[12-Aug-2017 12:30:51 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[12-Aug-2017 13:31:24 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[12-Aug-2017 18:06:40 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/signup_data.php on line 13
+[12-Aug-2017 18:06:44 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[12-Aug-2017 18:07:18 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[12-Aug-2017 18:11:23 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/signup_data.php on line 13
+[12-Aug-2017 21:54:56 Etc/GMT] PHP Parse error:  syntax error, unexpected T_STRING in /home/udghogvc/public_html/Register/signup.php on line 20
+[12-Aug-2017 21:55:38 Etc/GMT] PHP Parse error:  syntax error, unexpected T_STRING in /home/udghogvc/public_html/Register/signup.php on line 20
+[12-Aug-2017 21:58:48 Etc/GMT] PHP Parse error:  syntax error, unexpected T_STRING in /home/udghogvc/public_html/Register/signup.php on line 20
+[12-Aug-2017 22:00:09 Etc/GMT] PHP Parse error:  syntax error, unexpected T_STRING in /home/udghogvc/public_html/Register/signup.php on line 20
+[12-Aug-2017 22:00:40 Etc/GMT] PHP Parse error:  syntax error, unexpected T_STRING in /home/udghogvc/public_html/Register/signup.php on line 20
+[13-Aug-2017 06:57:25 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[13-Aug-2017 06:57:46 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[13-Aug-2017 08:04:26 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[13-Aug-2017 12:20:25 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[13-Aug-2017 12:33:46 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[13-Aug-2017 12:34:28 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[13-Aug-2017 16:03:32 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[14-Aug-2017 08:35:35 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[14-Aug-2017 08:36:29 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[14-Aug-2017 08:43:37 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/signup_data.php on line 13
+[14-Aug-2017 08:44:29 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/signup_data.php on line 13
+[14-Aug-2017 08:44:30 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/signup_data.php on line 13
+[14-Aug-2017 11:53:10 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[14-Aug-2017 11:53:15 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[14-Aug-2017 12:13:42 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[14-Aug-2017 23:51:22 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[15-Aug-2017 00:06:14 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[15-Aug-2017 06:07:54 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/signup_data.php on line 13
+[15-Aug-2017 06:08:35 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/signup_data.php on line 13
+[15-Aug-2017 06:09:43 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[15-Aug-2017 06:10:30 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[15-Aug-2017 07:30:10 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[15-Aug-2017 07:36:41 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[15-Aug-2017 09:12:27 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[15-Aug-2017 09:13:05 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[15-Aug-2017 10:31:15 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13
+[15-Aug-2017 11:45:13 Etc/GMT] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/udghogvc/public_html/Register/users_data.php on line 13

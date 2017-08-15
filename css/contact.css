@@ -430,7 +430,7 @@
     background-size:cover
 }
 .ch-img-12 { 
-    background-image: url('../img/core-team/nitin.jpg');
+    background-image: url('../img/core-team/harsh.jpg');
     width: 240px;
     height: 240px;
     background-size:cover
@@ -442,6 +442,43 @@
     height: 240px;
     background-size:cover
 }
+
+.ch-img-14 { 
+    background-image: url('../img/core-team/prashant.jpg');
+    width: 240px;
+    height: 240px;
+    background-size:cover
+}
+
+.ch-img-15 { 
+    background-image: url('../img/core-team/bishal.jpg');
+    width: 240px;
+    height: 240px;
+    background-size:cover
+}
+
+.ch-img-16 { 
+    background-image: url('../img/core-team/abhishek.jpg');
+    width: 240px;
+    height: 240px;
+    background-size:cover
+}
+
+.ch-img-17 { 
+    background-image: url('../img/core-team/sachin.jpg');
+    width: 240px;
+    height: 240px;
+    background-size:cover
+}
+
+.ch-img-18 { 
+    background-image: url('../img/core-team/shreya.jpg');
+    width: 240px;
+    height: 240px;
+    background-size:cover
+}
+
+
 
 .ch-info {
     position: absolute;
@@ -535,6 +572,7 @@
 
 @media only screen and (max-width: 767px){
                     .offset {margin-left: 74px;}
+                    .offset1 {margin-left: 37px;}
     .offset-one{margin-left: 74px;}
             .ch-img-1, .ch-img-2, .ch-img-3, .ch-img-4, .ch-img-5, .ch-img-6, .ch-img-7, .ch-img-8, .ch-img-9, .ch-img-10, .ch-img-11, .ch-img-12, .ch-img-13 {
         width: 200px;
@@ -558,6 +596,7 @@
 
 @media only screen and (min-width: 768px){
                     .offset {margin-left: 120px;}
+                    .offset1 {margin-left: 60px;}
     .offset-one{margin-left: 230px;}
             .ch-img-1, .ch-img-2, .ch-img-3, .ch-img-4, .ch-img-5, .ch-img-6, .ch-img-7, .ch-img-8, .ch-img-9, .ch-img-10, .ch-img-11, .ch-img-12, .ch-img-13 {
         width: 200px;
@@ -585,6 +624,7 @@
 
         @media only screen and (min-width: 1200px) {
                 .offset {margin-left: 250px;}
+                .offset1 {margin-left: 125px;}
     .offset-one{margin-left: 400px;}
     h2.head{margin-right: 100px;}
 
