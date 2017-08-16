@@ -479,6 +479,20 @@
     background-size:cover
 }
 
+.ch-img-19 { 
+    background-image: url('../img/core-team/SA.jpg');
+    width: 240px;
+    height: 240px;
+    background-size:cover
+}
+
+.ch-img-20 { 
+    background-image: url('../img/core-team/an.jpg');
+    width: 240px;
+    height: 240px;
+    background-size:cover
+}
+
 
 
 .ch-info {
