@@ -5,7 +5,19 @@
 * {box-sizing: border-box}
 body {font-family: "Lato", sans-serif;}
 
-.content{margin-top: 90px;}
+.content{margin-top: 0px;
+          padding-top:50px;}
+
+.text{
+  color:#808000;
+  font-weight:bold;
+}
+
+ .heading{
+  font-size:1.2em;
+  font-weight:bolder;
+ } 
+
 /* Style the tab */
 div.tab {
     float: left;
@@ -63,7 +75,6 @@ div.tab button.active {
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://use.fontawesome.com/fd2ef9ab09.js"></script>
   <!-- JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
@@ -75,7 +86,12 @@ div.tab button.active {
     }
     </style> 
 </head>
-<body id="body-color" style="overflow: auto;background-image: url('formback.png'); background-position: center; background-size: 100%;  background-attachment: fixed; height: 900px;"> 
+
+
+
+<body id="body-color" style="overflow: auto;background-image: url('formback.png'); background-position: center; background-size: 100%;  background-attachment: fixed;"> 
+
+
 <div class="topnav" id="myTopnav">
   <div class="navbar-header"><a class="navbar-brand" href="../index.html"><img src="img/logo.png" >
         </a></div>
@@ -122,9 +138,11 @@ div.tab button.active {
             </ul>
          
         </div>
-    </nav>
-    <div class="content">
-<h1><center> HOSPITALITY INFORMATION</center> </h1>
+</nav>
+
+
+<div class="content">
+<h1 style="margin-bottom:40px;"><center> HOSPITALITY INFORMATION</center> </h1>
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'FAQS')" id="defaultOpen">FAQS</button>
@@ -136,26 +154,25 @@ div.tab button.active {
 
 <div id="FAQS" class="tabcontent">
   <h2>FAQS</h2>
-  <h4>What is the procedure to be followed after reaching IITK?</h4>
-  <p>You need to report to the Hospitality Desk, Students Activity Centre (SAC) along with your college identity card.<br>
+  <p class="heading">What is the procedure to be followed after reaching IITK?</p>
+  <p class="text">You need to report to the Hospitality Desk, Students Activity Centre (SAC) along with your college identity card.<br>
         You will have to produce the reciept of your online payment and a recent passport size photograph.
     <br>   Booklet will act as your identity card in campus.
     <br>In case of a big contingent, contingent leader needs to present the ID cards of all the people in his contingent at the hospitality desk along with a list of all the people. Accommodation would be strictly on shared basis.
     </p>
-    <h4>Can two participants be from different colleges in a team event?</h4>
-     <p>No, Udghosh does not allow cross participation from colleges in a team event.</p>
-    <h4> Can I get accommodation on 10th october or before although the festival starts from 12th october?</h4>
-    <p>No, accommodation will be provided from 11th evening. All the participants coming before can stay in hotels outside IIT Kanpur.</p>
-    <h4>I dont want accommodation because I belong to kanpur , am I expected to pay the registration amount?</h4>
-    <p>Yes, the registration amount has to be paid by every participant. The accommodation and messing facilities are complimentary.</p>
+    <p class="heading">Can two participants be from different colleges in a team event?</p>
+     <p class="text">No, Udghosh does not allow cross participation from colleges in a team event.</p>
+    <p class="heading"> Can I get accommodation on 10th october or before although the festival starts from 12th october?</p>
+    <p class="text" class="text">No, accommodation will be provided from 11th evening. All the participants coming before can stay in hotels outside IIT Kanpur.</p>
+    <p class="heading">I dont want accommodation because I belong to kanpur , am I expected to pay the registration amount?</p>
+    <p class="text">Yes, the registration amount has to be paid by every participant. The accommodation and messing facilities are complimentary.</p>
    
 </div>
 
 <div id="Paris" class="tabcontent">
    <h2><center> CHECKLIST</center></h2>
-    Please ensure you have the following items before coming to hospitality desk:
-    <br><br>
-    <ol>
+    <p class="heading">Please ensure you have the following items before coming to hospitality desk:</p>  
+    <ol class="text">
       <li>Hard copy of filled registration forms, with no spelling mistake
       <li>Hard copy of NOC
       <li>Hard copy of payment/transaction details
@@ -167,7 +184,7 @@ div.tab button.active {
 
 <div id="Tokyo" class="tabcontent">
   <h2><center> Accommodation</center></h2>
-  <p>Accomodation will be provided from 11th evening. All the participants coming before can also stay in hotels outside IIT Kanpur.<br>
+  <p class="text">Accomodation will be provided from 11th evening. All the participants coming before can also stay in hotels outside IIT Kanpur.<br>
   You are required to report at the Hospitality desk in SAC (Students Activity Center) as soon as you arrive at the campus. Look out for directions in the campus to reach the hospitality desk.<br>
   All participants are required to carry their original college identity cards with photo proof to avail the accommodation and messing facilities in the campus and are required to follow the Rules and Regulations as mentioned on the respective page.<br>
   Kindly note that the accommodation is strictly on a shared basis and any requests for individual rooms or any complaints in this regard shall not be entertained.<br>
@@ -179,7 +196,7 @@ div.tab button.active {
 
 <div id="iit" class="tabcontent">
   <h2><center> Reaching IIT Kanpur</center></h2>
-  <p>From Kanpur Central Railway Station :
+  <p class="text">From Kanpur Central Railway Station :
   Taxis and autos are easily available from the Cantt side of the Kanpur Central Railway Station (from Platform number 1 side). There is a pre-paid auto and taxi booth.<br>
   The rates are Rs. 300 for a taxi and Rs. 200 for an auto. Sometimes you may be able to negotiate a few rupees less with the driver, if you don't go to the pre-paid booth. For convenience, fix up the rates with the driver before you board the auto or the taxi.<br>
   We will also arrange for some buses from the Kanpur Central Railway Station to pick up the participants. These would be available on the Platform 1 side of the Railway Station. However since the number of buses is limited, you might have to arrange for your own conveyance.<br>
