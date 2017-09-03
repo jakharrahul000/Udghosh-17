@@ -569,7 +569,7 @@ and (max-device-width : 568px) and (-webkit-min-device-pixel-ratio: 2){
   and (-webkit-min-device-pixel-ratio: 2) { 
     .cd-horizontal-timeline .timeline {
  
-    top:20px;
+    bottom:10px;
   }
 
   #sporticon img{
@@ -592,5 +592,5 @@ and (max-device-width : 568px) and (-webkit-min-device-pixel-ratio: 2){
   and (-webkit-min-device-pixel-ratio: 2) { 
     .cd-horizontal-timeline .timeline {
  
-    top:20px;
+    bottom:10px;
   }

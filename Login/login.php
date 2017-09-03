@@ -33,7 +33,7 @@ if(!empty($_POST['user'])) //checking the 'user' name which is from Sign-In.html
 			setcookie(userName,$row['userName']);
 
 
-			echo "<script>setTimeout(\"location.href = '../TeamDetails';\",1);</script>";
+			echo "<script>setTimeout(\"location.href = '../TeamDetails/';\",1);</script>";
 			echo "<script>alert(\"Welcome ".$_SESSION['fullName']." from ".$_SESSION['college']." college\");</script>";
 
 
@@ -42,7 +42,7 @@ if(!empty($_POST['user'])) //checking the 'user' name which is from Sign-In.html
 		{
 			//echo "SORRY... YOU ENTERD WRONG ID AND PASSWORD... PLEASE RETRY...";
 			echo '<script>alert("Enter correct username and password.");</script>';
-			echo "<script>setTimeout(\"location.href = 'index.html';\",1500);</script>";
+			echo "<script>setTimeout(\"location.href = '../Login/';\",1500);</script>";
 
 			//$_SESSION['message'] = "Enter correct userName and password!!";
 			//echo $_SESSION[message];

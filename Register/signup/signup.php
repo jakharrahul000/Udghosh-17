@@ -16,7 +16,7 @@ function NewUser()
 	if($data)
 		{
 			echo '<script>alert("Your account is successfully created. Login to fill your team details.");</script>';
-			echo "<script> setTimeout(\"location.href = '../Login/';\",500);</script>";
+			echo "<script> setTimeout(\"location.href = '../../Login/';\",500);</script>";
 
 		}
 	}
@@ -33,7 +33,7 @@ function SignUp()
 		else
 		{
 			echo '<script>alert("Your account is already registered. Login to fill your team details.");</script>';
-			echo "<script> setTimeout(\"location.href = '../Login/';\",500);</script>";
+			echo "<script> setTimeout(\"location.href = '../../Login/';\",500);</script>";
 		}
 }
 }

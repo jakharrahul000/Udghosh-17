@@ -51,7 +51,7 @@ $query = "INSERT INTO sports_form (username,college,sports,gender,captain,email,
 	if($data)
 		{
 			echo '<script>cnf=confirm("You have successfully registered for this sport. Do you want to register for another sport?");</script>';
-			echo "<script> if(cnf){setTimeout(\"location.href = '../TeamDetails/';\",500);} else { setTimeout(\"location.href = '../index.html';\",500); }</script>";
+			echo "<script> if(cnf){setTimeout(\"location.href = '../TeamDetails/';\",500);} else { setTimeout(\"location.href = '../';\",500); }</script>";
 		}
 
 	}
@@ -69,7 +69,7 @@ function SignUp()
 		else
 		{
 			echo '<script>cnf=confirm("You have already registered for this sport. Do you want to register for another sport?");</script>';
-			echo "<script> if(cnf){setTimeout(\"location.href = '../TeamDetails/';\",500);} else { setTimeout(\"location.href = 'udghosh.org';\",500); }</script>";
+			echo "<script> if(cnf){setTimeout(\"location.href = '../TeamDetails/';\",500);} else { setTimeout(\"location.href = '../';\",500); }</script>";
 
 			//echo '<script></script>';
 			//echo "<script>setTimeout(\"location.href = 'login.html';\",1500);</script>";

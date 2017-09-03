@@ -1,27 +1,50 @@
-$(document).ready(function(){
-    // Activate Carousel
-    $("#myCarousel").carousel({interval: 3000});
-    
-    // Enable Carousel Indicators
-    $(".item1").click(function(){
-        $("#myCarousel").carousel(0);
+jQuery(document).ready(function($){
+	var contentSections = $('.cd-section'),
+		navigationItems = $('#cd-vertical-nav a');
+
+	updateNavigation();
+	$(window).on('scroll', function(){
+		updateNavigation();
+	});
+
+	//smooth scroll to the section
+	navigationItems.on('click', function(event){
+        event.preventDefault();
+        smoothScroll($(this.hash));
     });
-    $(".item2").click(function(){
-        $("#myCarousel").carousel(1);
+    //smooth scroll to second section
+    $('.cd-scroll-down').on('click', function(event){
+        event.preventDefault();
+        smoothScroll($(this.hash));
     });
-    $(".item3").click(function(){
-        $("#myCarousel").carousel(2);
+
+    //open-close navigation on touch devices
+    $('.touch .cd-nav-trigger').on('click', function(){
+    	$('.touch #cd-vertical-nav').toggleClass('open');
+  
     });
-    $(".item4").click(function(){
-        $("#myCarousel").carousel(3);
+    //close navigation on touch devices when selectin an elemnt from the list
+    $('.touch #cd-vertical-nav a').on('click', function(){
+    	$('.touch #cd-vertical-nav').removeClass('open');
     });
-    
-    // Enable Carousel Controls
-    $(".left").click(function(){
-        $("#myCarousel").carousel("prev");
-    });
-    $(".right").click(function(){
-        $("#myCarousel").carousel("next");
-    });
+
+	function updateNavigation() {
+		contentSections.each(function(){
+			$this = $(this);
+			var activeSection = $('#cd-vertical-nav a[href="#'+$this.attr('id')+'"]').data('number') - 1;
+			if ( ( $this.offset().top - $(window).height()/2 < $(window).scrollTop() ) && ( $this.offset().top + $this.height() - $(window).height()/2 > $(window).scrollTop() ) ) {
+				navigationItems.eq(activeSection).addClass('is-selected');
+			}else {
+				navigationItems.eq(activeSection).removeClass('is-selected');
+			}
+		});
+	}
+
+	function smoothScroll(target) {
+        $('body,html').animate(
+        	{'scrollTop':target.offset().top},
+        	600
+        );
+	}
 });
 

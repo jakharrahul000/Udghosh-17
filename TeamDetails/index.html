@@ -26,46 +26,54 @@
 
 <body id="body-color" style="overflow: auto;background-image: url('formback.png'); background-position: center; background-size: 100%;  background-attachment: fixed; height: 900px;">
     <div class="topnav" id="myTopnav">
-        <div class="navbar-header"><a class="navbar-brand" href="../index.html"><img src="img/logo.png" >
-        </a></div>
-        <span class="cl-effect-1"><a href="#">EVENTS</a></span>
-        <span class="cl-effect-1"><a href="#">GALLERY</a></span>
-        <span class="cl-effect-1"><a href="#">TEAM</a></span>
-        <span class="cl-effect-1"><a href="#">SPONSORS</a></span>
-        <a href="javascript:void(0);" style="font-size:15px; color: #333;" class="icon" onclick="myFunction()">&#9776;</a>
-        <a style="float:none; display: inline" href="signup.html">
-            <button class="button button3">REGISTER</button>
-        </a>
-        <li class="faq"><a data-toggle="modal" data-target="#myModal" href="#" style="font-size: 13px; height: 40px; width: 49px; ">
-          <span class="fa-stack fa-lg" style="font-size: 1em;">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-question fa-stack-1x fa-inverse"></i><span style="text-align: center;padding-left: 30px; top:7px;">FAQs
-        </span></a></li>
-    </div>
-    <!-- Mobile navbar -->
-    <nav class=" hidden-md hidden-lg navbar navbar-default  ">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="../index.html" style="border-right:none;   margin-top: 8px; padding:5px;"><img src="img/logo.png"  >
-        </a>
-        </div>
-        <!-- Collection of nav links and other content for toggling -->
-        <div id="navbarCollapse" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="cl-effect-1"><a href="../index.html">HOME</a></li>
-                <li class="cl-effect-1"><a href="#">EVENTS</a></li>
-                <li class="cl-effect-1"><a href="#">GALLERY</a></li>
-                <li class="cl-effect-1"><a href="#">TEAM</a></li>
-                <li class="cl-effect-1"><a href="#">SPONSORS</a></li>
-            </ul>
-        </div>
-    </nav>
+            <div class="navbar-header"><a class="navbar-brand" href="../"><img src="img/logo.png" >
+            </a></div>
+
+            <span class="cl-effect-1"><a href="../Events/">EVENTS</a></span>
+            <span class="cl-effect-1"><a href="../Gallery/">GALLERY</a></span>
+            <span class="cl-effect-1"><a href="../Team/">TEAM</a></span>
+            <span class="cl-effect-1"><a href="#">SPONSORS</a></span>
+            <a href="javascript:void(0);" style="font-size:15px; color: #333;" class="icon" onclick="myFunction()">&#9776;</a>
+            <a style="float:none; display: inline" href="../SignUp/"><button class="button button3">REGISTER</button></a>
+
+            <li class="faq" style="cursor: pointer;"><a data-toggle="modal" data-target="#myModal" href="#" style="font-size: 13px; height: 40px; width: 49px; ">
+                <span class="fa-stack fa-lg" style="font-size: 1em;">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-question fa-stack-1x fa-inverse"></i><span style="text-align: center;padding-left: 30px; top:7px;">FAQs
+                </span></a></li>
+
+
+
+            </div>
+
+
+            <nav class=" hidden-md hidden-lg navbar navbar-default  " >
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div  class="navbar-header">
+                    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="../" style="border-right:none;   margin-top: 8px; padding:5px;"><img src="img/logo.png"  >
+                    </a>
+                </div>
+                <!-- Collection of nav links and other content for toggling -->
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="cl-effect-1"><a href="../">HOME</a></li>
+                        <li class="cl-effect-1"><a href="../Events/">EVENTS</a></li>
+                        <li class="cl-effect-1"><a href="../Gallery/">GALLERY</a></li>
+                        <li class="cl-effect-1"><a href="../Team/">TEAM</a></li>
+                        <li class="cl-effect-1"><a href="#">SPONSORS</a></li>
+
+
+                    </ul>
+
+                </div>
+            </nav>
     <div class="form3 col-md-12">
         <div class="form4">
             <form class=" form-horizontal" action="user.php" method="POST" id="contact_form" name="form1" style="background-color: rgba(245, 245, 245,0.8); border-radius:15px; border: 1px solid #ddd; padding: 20px; ;margin-bottom: 0px;">
@@ -111,6 +119,11 @@
                         } else if (selectedValue == "Football") {
                             $('#input-gender-female').attr('disabled');
                             $("input.tsize").attr("placeholder", "11 - 16 players");
+                        
+                         } else if (selectedValue == "Kabaddi") {
+                            $('#input-gender-female').attr('disabled');
+                            $("input.tsize").attr("placeholder", "11 - 16 players");
+
 
                         } else if (selectedValue == "Basketball") {
                             $('#input-gender-female').removeAttr('disabled');
@@ -119,6 +132,11 @@
                         } else if (selectedValue == "Hockey") {
                             $('#input-gender-female').attr('disabled');
                             $("input.tsize").attr("placeholder", "11 - 16 players");
+                            
+                        } else if (selectedValue == "Hockey") {
+                            $('#input-gender-female').attr('disabled');
+                            $("input.tsize").attr("placeholder", "1 player");
+                            
                         } else if (selectedValue == "Powerlifting") {
                             $('#input-gender-female').attr('disabled');
                             $("input.tsize").attr("placeholder", "1 - 10 players");
@@ -198,10 +216,12 @@
                                     <!-- d -->
                                     <option value="Hockey">Hockey</option>
                                     <!-- d -->
+                                    <option value="Kabaddi">Kabaddi</option>
                                     <option value="Kho-kho">Kho-kho</option>
                                     <!-- d -->
                                     <option value="Lawn Tennis">Lawn Tennis</option>
                                     <!-- d -->
+                                    <option value="Mr. Udghosh">Mr. Udghosh</option>
                                     <option value="Powerlifting">Powerlifting</option>
                                     <!-- d -->
                                     <option value="Skating">Skating</option>
@@ -833,8 +853,7 @@
                 <h4 class="q"><strong>Q.&nbsp;Can I get accommodation on 10th october or before although the festival starts from 12th october?</strong></h4>
         <p style="padding-left: 20px;color: #333;">No, accommodation will be provided from 11th evening. All the participants coming before can stay in hotels outside IIT Kanpur.</p>
 
-                <h4 class="q"><strong>Q.&nbsp;I dont want accommodation because I belong to kanpur , am I expected to pay the registration amount?</strong></h4>
-        <p style="padding-left: 20px;color: #333;">Yes, the registration amount has to be paid by every participant. The accommodation and messing facilities are complimentary.</p>
+                
 
 
       </div>

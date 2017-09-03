@@ -25,6 +25,11 @@
 			height: 100%;
 		}
 
+		html {
+			overflow: hidden;
+			height: 100%;
+		}
+
   .fa-eercast {
       font-size:10px; text-align: center; padding-right: 10px;
       color: rgba(171, 191, 219, 1);
@@ -39,15 +44,15 @@
 <body style="  background: url('img/background1.png') repeat ; background-size: 100%;">
 	<div class="body" >
 		<div class="topnav" id="myTopnav">
-			<div class="navbar-header"><a class="navbar-brand" href="#"><img src="img/logo.png" >
+			<div class="navbar-header"><a class="navbar-brand" href="../"><img src="img/logo.png" >
 			</a></div>
 
-			<span class="cl-effect-1"><a href="#">EVENTS</a></span>
-			<span class="cl-effect-1"><a href="#">GALLERY</a></span>
-			<span class="cl-effect-1"><a href="#">TEAM</a></span>
+			<span class="cl-effect-1"><a href="../Events/">EVENTS</a></span>
+			<span class="cl-effect-1"><a href="../Gallery/">GALLERY</a></span>
+			<span class="cl-effect-1"><a href="../Team/">TEAM</a></span>
 			<span class="cl-effect-1"><a href="#">SPONSORS</a></span>
 			<a href="javascript:void(0);" style="font-size:15px; color: #333;" class="icon" onclick="myFunction()">&#9776;</a>
-			<a style="float:none; display: inline" href="Register/signup.html"><button class="button button3">REGISTER</button></a>
+			<a style="float:none; display: inline" href="../SignUp/"><button class="button button3">REGISTER</button></a>
 
 			<li class="faq" style="cursor: pointer;"><a data-toggle="modal" data-target="#myModal" href="#" style="font-size: 13px; height: 40px; width: 49px; ">
 				<span class="fa-stack fa-lg" style="font-size: 1em;">
@@ -70,16 +75,16 @@
 						<span class="icon-bar"></span>
 					</button>
 
-					<a class="navbar-brand" href="#" style="border-right:none;   margin-top: 8px; padding:5px;"><img src="img/logo.png"  >
+					<a class="navbar-brand" href="../" style="border-right:none;   margin-top: 8px; padding:5px;"><img src="img/logo.png"  >
 					</a>
 				</div>
 				<!-- Collection of nav links and other content for toggling -->
 				<div id="navbarCollapse" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li class="cl-effect-1"><a href="#">HOME</a></li>
-						<li class="cl-effect-1"><a href="#">EVENTS</a></li>
-						<li class="cl-effect-1"><a href="#">GALLERY</a></li>
-						<li class="cl-effect-1"><a href="#">TEAM</a></li>
+						<li class="cl-effect-1"><a href="../">HOME</a></li>
+						<li class="cl-effect-1"><a href="../Events/">EVENTS</a></li>
+						<li class="cl-effect-1"><a href="../Gallery/">GALLERY</a></li>
+						<li class="cl-effect-1"><a href="../Team/">TEAM</a></li>
 						<li class="cl-effect-1"><a href="#">SPONSORS</a></li>
 
 
@@ -158,7 +163,7 @@
 							<h2>Badminton</h2>
 							<em>Important Rules</em>
 							<div>
-								<div style="display: inline;float: left;width: 20%; padding: auto 5px;" id="sporticon" ><img src="img/sporticon/badminton1.png" height="100%" width="200px" /></div>
+								<div style="display: inline;float: left;width: 20%; padding: auto 5px;" id="sporticon" ><img src="img/sporticon/badminton1.png" height="100%" width="100%"  /></div>
 								<div style="display: inline;float: left; " class="rule" >
 									<div style="width: 100%;overflow-y:scroll;" id="style-1" >
 										<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
@@ -183,7 +188,7 @@
 									<h2>Basketball</h2>
 									<em>Important Rules</em>
 									<div>
-										<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/logo.png" height="220px" /></div>
+										<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/basketball1.png" height="100%" width="100%" /></div>
 										<div style="display: inline;float: left; " class="rule" >
 											<div style="width: 100%;overflow-y:scroll;" id="style-1" >
 												<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
@@ -206,7 +211,7 @@
 										<h2>Carrom</h2>
 										<em>Important Rules</em>
 										<div>
-											<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/logo.png" height="220px" /></div>
+											<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/carom.png" height="100%" width="100%" /></div>
 											<div style="display: inline;float: left; " class="rule" >
 												<div style="width: 100%;overflow-y:scroll;" id="style-1" >
 													<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
@@ -229,7 +234,7 @@
 											<h2>Chess</h2>
 											<em>Important Rules</em>
 											<div>
-												<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/logo.png" height="220px" /></div>
+												<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/chess.png" height="100%" width="100%" /></div>
 												<div style="display: inline;float: left; " class="rule" >
 													<div style="width: 100%;overflow-y:scroll;" id="style-1" >
 														<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
@@ -253,7 +258,7 @@
 													<h2>Cricket</h2>
 													<em>Important Rules</em>
 													<div>
-														<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/logo.png" height="220px" /></div>
+														<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/cricket1.png" height="100%" width="100%" /></div>
 														<div style="display: inline;float: left; " class="rule" >
 															<div style="width: 100%;overflow-y:scroll;" id="style-1" >
 																<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
@@ -276,7 +281,7 @@
 														<h2>Football</h2>
 														<em>Important Rules</em>
 														<div>
-															<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/logo.png" height="220px" /></div>
+															<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/football1.png" height="100%" width="100%" /></div>
 															<div style="display: inline;float: left; " class="rule" >
 																<div style="width: 100%;overflow-y:scroll;" id="style-1" >
 																	<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
@@ -299,7 +304,7 @@
 															<h2>Handball</h2>
 															<em>Important Rules</em>
 															<div>
-																<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/logo.png" height="220px" /></div>
+																<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/handball.png" height="100%" width="100%" /></div>
 																<div style="display: inline;float: left; " class="rule" >
 																	<div style="width: 100%;overflow-y:scroll;" id="style-1" >
 																		<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
@@ -322,7 +327,7 @@
 																<h2>Hockey</h2>
 																<em>Important Rules</em>
 																<div>
-																	<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/logo.png" height="220px" /></div>
+																	<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/hockey1.png" height="100%" width="100%" /></div>
 																	<div style="display: inline;float: left; " class="rule" >
 																		<div style="width: 100%;overflow-y:scroll;" id="style-1" >
 																			<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
@@ -345,7 +350,7 @@
 																	<h2>Kabaddi</h2>
 																	<em>Important Rules</em>
 																	<div>
-																		<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/logo.png" height="220px" /></div>
+																		<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/Kabaddi.png" height="100%" width="100%" /></div>
 																		<div style="display: inline;float: left; " class="rule" >
 																			<div style="width: 100%;overflow-y:scroll;" id="style-1" >
 																				<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
@@ -368,7 +373,7 @@
 																		<h2>Kho-kho</h2>
 																		<em>Important Rules</em>
 																		<div>
-																			<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/logo.png" height="220px" /></div>
+																			<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/KHO kho.png" height="100%" width="100%" /></div>
 																			<div style="display: inline;float: left; " class="rule" >
 																				<div style="width: 100%;overflow-y:scroll;" id="style-1" >
 																					<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
@@ -391,7 +396,7 @@
 																			<h2>Lawn Tennis</h2>
 																			<em>Important Rules</em>
 																			<div>
-																				<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/logo.png" height="220px" /></div>
+																				<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/LAWN tennis1.png" height="100%" width="100%" /></div>
 																				<div style="display: inline;float: left; " class="rule" >
 																					<div style="width: 100%;overflow-y:scroll;" id="style-1" >
 																						<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
@@ -414,7 +419,7 @@
 																					<h2>Mr. Udghosh</h2>
 																					<em>Important Rules</em>
 																					<div>
-																						<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/logo.png" height="220px" /></div>
+																						<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/mr udghosh.png" height="100%" width="95%" /></div>
 																						<div style="display: inline;float: left; " class="rule" >
 																							<div style="width: 100%;overflow-y:scroll;" id="style-1" >
 																								<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
@@ -437,7 +442,7 @@
 																							<h2>Powerlifting</h2>
 																							<em>Important Rules</em>
 																							<div>
-																								<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/logo.png" height="220px" /></div>
+																								<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/powerlifting.png" height="100%" width="95%" /></div>
 																								<div style="display: inline;float: left; " class="rule" >
 																									<div style="width: 100%;overflow-y:scroll;" id="style-1" >
 																										<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
@@ -464,7 +469,7 @@
 																									<h2>Skating</h2>
 																									<em>Important Rules</em>
 																									<div>
-																										<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/logo.png" height="220px" /></div>
+																										<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/skating.png" height="100%" width="100%"/></div>
 																										<div style="display: inline;float: left; " class="rule" >
 																											<div style="width: 100%;overflow-y:scroll;" id="style-1" >
 																												<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
@@ -490,7 +495,7 @@
 																											<h2>Sports Quiz</h2>
 																											<em>Important Rules</em>
 																											<div>
-																												<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/logo.png" height="220px" /></div>
+																												<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/sports quiz.png" height="100%" width="100%" /></div>
 																												<div style="display: inline;float: left; " class="rule" >
 																													<div style="width: 100%;overflow-y:scroll;" id="style-1" >
 																														<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
@@ -518,7 +523,7 @@
 																													<h2>Squash</h2>
 																													<em>Important Rules</em>
 																													<div>
-																														<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/logo.png" height="220px" /></div>
+																														<div style="display: inline;float: left;width: 20%; padding: auto 5px;" id="sporticon" ><img src="img/sporticon/squash.png" height="100%" width="100%" /></div>
 																														<div style="display: inline;float: left; " class="rule" >
 																															<div style="width: 100%;overflow-y:scroll;" id="style-1" >
 																																<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
@@ -542,7 +547,7 @@
 																															<h2>Swimming</h2>
 																															<em>Important Rules</em>
 																															<div>
-																																<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/logo.png" height="220px" /></div>
+																																<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/swimming1.png" height="100%" width="100%" /></div>
 																																<div style="display: inline;float: left; " class="rule" >
 																																	<div style="width: 100%;overflow-y:scroll;" id="style-1" >
 																																		<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
@@ -565,7 +570,7 @@
 																																	<h2>Table Tennis</h2>
 																																	<em>Important Rules</em>
 																																	<div>
-																																		<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/logo.png" height="220px" /></div>
+																																		<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/table tennis.png" height="100%" width="100%" /></div>
 																																		<div style="display: inline;float: left; " class="rule" >
 																																			<div style="width: 100%;overflow-y:scroll;" id="style-1" >
 																																				<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
@@ -588,7 +593,7 @@
 																																			<h2>Taekwondo</h2>
 																																			<em>Important Rules</em>
 																																			<div>
-																																				<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/logo.png" height="220px" /></div>
+																																				<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/taekwando1.png" height="100%" width="100%" /></div>
 																																				<div style="display: inline;float: left; " class="rule" >
 																																					<div style="width: 100%;overflow-y:scroll;" id="style-1" >
 																																						<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
@@ -613,7 +618,7 @@
 																																					<h2>Volleyball</h2>
 																																					<em>Important Rules</em>
 																																					<div>
-																																						<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/logo.png" height="220px" /></div>
+																																						<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/volleyball1.png" height="100%" width="100%" /></div>
 																																						<div style="display: inline;float: left; " class="rule" >
 																																							<div style="width: 100%;overflow-y:scroll;" id="style-1" >
 																																								<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
@@ -636,7 +641,7 @@
 																																					<h2>Weightlifting</h2>
 																																					<em>Important Rules</em>
 																																					<div>
-																																						<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/logo.png" height="220px" /></div>
+																																						<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/powerlifting.png" height="100%" width="95%" /></div>
 																																						<div style="display: inline;float: left; " class="rule" >
 																																							<div style="width: 100%;overflow-y:scroll;" id="style-1" >
 																																								<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
@@ -665,7 +670,7 @@
 																																							<h2>General rules</h2>
 																																							<em>Follow all sports</em>
 																																							<div>
-																																								<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/logo.png" height="220px" /></div>
+																																								<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/general.png" height="100%" width="100%" /></div>
 																																								<div style="display: inline;float: left; " class="rule" >
 																																									<div style="width: 100%;overflow-y:scroll;" id="style-1" >
 																																										<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
@@ -786,8 +791,7 @@
                 <h4 class="q"><strong>Q.&nbsp;Can I get accommodation on 10th october or before although the festival starts from 12th october?</strong></h4>
         <p style="padding-left: 20px;color: #333;">No, accommodation will be provided from 11th evening. All the participants coming before can stay in hotels outside IIT Kanpur.</p>
 
-                <h4 class="q"><strong>Q.&nbsp;I dont want accommodation because I belong to kanpur , am I expected to pay the registration amount?</strong></h4>
-        <p style="padding-left: 20px;color: #333;">Yes, the registration amount has to be paid by every participant. The accommodation and messing facilities are complimentary.</p>
+                
 
 
       </div>
