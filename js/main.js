@@ -28,8 +28,6 @@ jQuery(document).ready(function($){
     	$('.touch #cd-vertical-nav').removeClass('open');
     });
 
-<<<<<<< HEAD
-=======
 	function updateNavigation() {
 		contentSections.each(function(){
 			$this = $(this);
@@ -50,4 +48,3 @@ jQuery(document).ready(function($){
 	}
 });
 
->>>>>>> master
