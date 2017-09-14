@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Events | Udghosh'17</title>
+	<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32"> 
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/style1.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link id="myLink" rel="stylesheet" type="text/css" href="style1.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/fd2ef9ab09.js"></script>
+	
+	<style type="text/css">
+		.body {
+			background-color: rgba(35, 49, 74, 0.9);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		html {
+			overflow: hidden;
+			height: 100%;
+		}
+
+  .fa-eercast {
+      font-size:10px; text-align: center; padding-right: 10px;
+      color: rgba(171, 191, 219, 1);
+    }
+
+#sporticon img {
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(217, 237, 247, 0.3) );
+  filter: drop-shadow(2px 2px 2px rgba(217, 237, 247, 0.3));
+}
+	</style>
+</head>
+<body style="  background: url('img/background1.png') repeat ; background-size: 100%;">
+	<div class="body" >
+		<div class="topnav" id="myTopnav">
+			<div class="navbar-header"><a class="navbar-brand" href="../"><img src="img/logo.png" >
+			</a></div>
+
+			<span class="cl-effect-1"><a href="../Events/">EVENTS</a></span>
+			<span class="cl-effect-1"><a href="../Gallery/">GALLERY</a></span>
+			<span class="cl-effect-1"><a href="../Team/">TEAM</a></span>
+			<span class="cl-effect-1"><a href="#">SPONSORS</a></span>
+			<a href="javascript:void(0);" style="font-size:15px; color: #333;" class="icon" onclick="myFunction()">&#9776;</a>
+			<a style="float:none; display: inline" href="../SignUp/"><button class="button button3">REGISTER</button></a>
+
+			<li class="faq" style="cursor: pointer;"><a data-toggle="modal" data-target="#myModal" href="#" style="font-size: 13px; height: 40px; width: 49px; ">
+				<span class="fa-stack fa-lg" style="font-size: 1em;">
+					<i class="fa fa-circle fa-stack-2x"></i>
+					<i class="fa fa-question fa-stack-1x fa-inverse"></i><span style="text-align: center;padding-left: 30px; top:7px;">FAQs
+				</span></a></li>
+
+
+
+			</div>
+
+
+			<nav class=" hidden-md hidden-lg navbar navbar-default  " >
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div  class="navbar-header">
+					<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a class="navbar-brand" href="../" style="border-right:none;   margin-top: 8px; padding:5px;"><img src="img/logo.png"  >
+					</a>
+				</div>
+				<!-- Collection of nav links and other content for toggling -->
+				<div id="navbarCollapse" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="cl-effect-1"><a href="../">HOME</a></li>
+						<li class="cl-effect-1"><a href="../Events/">EVENTS</a></li>
+						<li class="cl-effect-1"><a href="../Gallery/">GALLERY</a></li>
+						<li class="cl-effect-1"><a href="../Team/">TEAM</a></li>
+						<li class="cl-effect-1"><a href="#">SPONSORS</a></li>
+
+
+					</ul>
+
+				</div>
+			</nav>
+			<div class="cd-horizontal-timeline">
+
+	<!--<div class="timeline" id="timeline1" >
+		<div class="events-wrapper">
+			<div class="events">
+				<ol>
+					<li><a href="#0" data-date="02/01/2017" class="selected">Athletics</a></li>
+					<li><a href="#0" data-date="03/01/2017">Badminton</a></li>
+					<li><a href="#0" data-date="04/01/2017">Basketball</a></li>
+					<li><a href="#0" data-date="05/01/2017">Carrom</a></li>
+					<li><a href="#0" data-date="06/01/2017">Chess</a></li>
+					<li><a href="#0" data-date="07/01/2017">Cricket</a></li>
+					<li><a href="#0" data-date="08/01/2017">Football</a></li>
+					<li><a href="#0" data-date="09/01/2017">Handball</a></li>
+					<li><a href="#0" data-date="10/01/2017">Hockey</a></li>
+					<li><a href="#0" data-date="11/01/2017">Kabaddi</a></li>
+					<li><a href="#0" data-date="12/01/2017">Kho-kho</a></li>
+					<li><a href="#0" data-date="13/01/2017">Lawn Tennis</a></li>
+					<li><a href="#0" data-date="14/01/2017">Mr. Udghosh</a></li>
+					<li><a href="#0" data-date="15/01/2017">Powerlifting</a></li>
+					<li><a href="#0" data-date="16/01/2017">Skating</a></li>
+					<li><a href="#0" data-date="17/01/2017">Sports Quiz</a></li>
+					<li><a href="#0" data-date="18/01/2017">Squash</a></li>
+					<li><a href="#0" data-date="19/01/2017">Swimming</a></li>
+					<li><a href="#0" data-date="20/01/2017">Table Tennis</a></li>
+					<li><a href="#0" data-date="21/01/2017">Taekwondo</a></li>
+					<li><a href="#0" data-date="22/01/2017">Volleyball</a></li>
+					<li><a href="#0" data-date="23/01/2017">General rules</a></li>
+					
+				</ol>
+
+				<span class="filling-line" aria-hidden="true"></span>
+			</div> .events -->
+			<!--</div>  .events-wrapper -->
+			
+		<!--<ul class="cd-timeline-navigation">
+			<li><a href="#0" class="prev inactive">Prev</a></li>
+			<li><a href="#0" class="next">Next</a></li>
+		</ul>  .cd-timeline-navigation -->
+		<!--	</div>  .timeline -->
+
+		<div class="events-content">
+			<ol>
+				<li class="selected" data-date="02/01/2017">
+					<h2>Athletics</h2>
+					<em>Important Rules</em>
+					<div >
+						<div style="display: inline;float: left;width: 20%; padding: auto 5px;" id="sporticon"><img src="img/sporticon/athletic.png" width="100%" height="100%" /></div>
+						<div style="display: inline;float: left; " class="rule" >
+							<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+								<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+									<p><i class="fa fa-eercast" aria-hidden="true"></i>  The competition shall be conducted under the International Athletics Federation rules as adopted from time to time by AFI, unless otherwise modified.</p>
+									<p><i class="fa fa-eercast" aria-hidden="true"></i> Each college will be entitled to enter not more than <strong>two competitors per event</strong>. For relay races, not more than an entry of four with one reserve per event shall be accepted.</p>
+									<p><i class="fa fa-eercast" aria-hidden="true"></i> An athlete is allowed to participate in a <strong>maximum of 3 events</strong> excluding relays.
+									</p></div>
+
+								</div>
+								<div class="differentButtons">
+									<a href="https://docs.google.com/document/d/1CJecj4GVSHT-BnAF3Wx7MwgoE8nSURZK6j_QxXNoNlI/edit" target="_blank" class="contentButton">Rules </a>
+									<a href="#" class="disableButton">Schedule</a>
+									<a href="#" class="disableButton">Results</a>
+
+								</div>
+							</div>
+						</li>
+
+						<li data-date="03/01/2017">
+							<h2>Badminton</h2>
+							<em>Important Rules</em>
+							<div>
+								<div style="display: inline;float: left;width: 20%; padding: auto 5px;" id="sporticon" ><img src="img/sporticon/badminton1.png" height="100%" width="100%"  /></div>
+								<div style="display: inline;float: left; " class="rule" >
+									<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+										<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+											<p><i class="fa fa-eercast" aria-hidden="true"></i>  The tournament for men and women section will be conducted on the lines of Inter State Badminton Championship.</p>
+											<p><i class="fa fa-eercast" aria-hidden="true"></i> Number of players:<br>
+												Men: The number of players representing any college in a team can be a <strong>maximum of 5 members</strong>.<br>
+												Women: The number of players representing any college in a team can be a <strong>maximum of 3 members</strong>. </p>
+											</div>
+
+										</div>
+										<div class="differentButtons">
+											<a href="https://docs.google.com/document/d/1c-fsMbdEaXET87DsQUsT2e5z2YBHkexeOoEaydWv5V8/edit?usp=sharing" target="_blank" class="contentButton">Rules </a>
+											<a href="#" class="disableButton">Schedule</a>
+											<a href="#" class="disableButton">Results</a>
+
+										</div>
+									</div>
+								</li>
+
+								<li data-date="04/01/2017">
+									<h2>Basketball</h2>
+									<em>Important Rules</em>
+									<div>
+										<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/basketball1.png" height="100%" width="100%" /></div>
+										<div style="display: inline;float: left; " class="rule" >
+											<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+												<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+													<p><i class="fa fa-eercast" aria-hidden="true"></i>  The tournament will be conducted according to the International Basketball Federation (FIBA) rules as adopted from time to time by the Basketball Federation of India (BFI), unless otherwise modified.</p>
+													<p><i class="fa fa-eercast" aria-hidden="true"></i> The maximum team limit is <strong>12 players</strong>.</p>
+												</div>
+
+											</div>
+											<div class="differentButtons">
+												<a href="https://docs.google.com/document/d/1qvoJ_IBijzFOmoTJ0tKT8In74B9Gzm3IEhGA_FX63P4/edit?usp=sharing" target="_blank" class="contentButton">Rules </a>
+												<a href="#" class="disableButton">Schedule</a>
+												<a href="#" class="disableButton">Results</a>
+
+											</div>
+										</div>
+									</li>
+
+									<li data-date="05/01/2017">
+										<h2>Carrom</h2>
+										<em>Important Rules</em>
+										<div>
+											<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/carom.png" height="100%" width="100%" /></div>
+											<div style="display: inline;float: left; " class="rule" >
+												<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+													<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+														<p><i class="fa fa-eercast" aria-hidden="true"></i>  Matches shall be played according to the rules of International Carrom Federation as adopted from time to time by the All India Carrom Federation unless otherwise modified.</p>
+														<p><i class="fa fa-eercast" aria-hidden="true"></i> A team will consists of <strong>2 players</strong> which can be either <strong> 2 men</strong>, <strong>2 women</strong> or <strong>1 man</strong> and <strong>1 woman</strong>.</p>
+													</div>
+
+												</div>
+												<div class="differentButtons">
+													<a href="https://docs.google.com/document/d/1H6Z_0xWHik7vcolMWZu-Ko7YKk9OfU6NYRs0WspRlCQ/edit?usp=sharing" target="_blank" class="contentButton">Rules </a>
+													<a href="#" class="disableButton">Schedule</a>
+													<a href="#" class="disableButton">Results</a>
+
+												</div>
+											</div>
+										</li>
+
+										<li data-date="06/01/2017">
+											<h2>Chess</h2>
+											<em>Important Rules</em>
+											<div>
+												<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/chess.png" height="100%" width="100%" /></div>
+												<div style="display: inline;float: left; " class="rule" >
+													<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+														<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+															<p><i class="fa fa-eercast" aria-hidden="true"></i>  The team consists of <strong>5 players</strong> in which one is extra.</p>
+															<p><i class="fa fa-eercast" aria-hidden="true"></i> The team may consists of any mix of men and women (eg: 3 Men, 2 Women).</p>
+															<p><i class="fa fa-eercast" aria-hidden="true"></i> All the team members must belong to the <strong>same institute</strong>.</p>
+															<p><i class="fa fa-eercast" aria-hidden="true"></i> <strong>Number of matches for each team is 6</strong> which is subject to modification as decided by referee according to the available time.</p> </div>
+
+														</div>
+														<div class="differentButtons">
+															<a href="https://docs.google.com/document/d/1cKA75K2Ezva_fJXYRS15LYx92UvzJj0Wj_mNSrbW1N4/edit?usp=sharing" target="_blank" class="contentButton">Rules </a>
+															<a href="#" class="disableButton">Schedule</a>
+															<a href="#" class="disableButton">Results</a>
+
+														</div>
+													</div>
+												</li>
+
+												<li data-date="07/01/2017">
+													<h2>Cricket</h2>
+													<em>Important Rules</em>
+													<div>
+														<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/cricket1.png" height="100%" width="100%" /></div>
+														<div style="display: inline;float: left; " class="rule" >
+															<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+																<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+																	<p><i class="fa fa-eercast" aria-hidden="true"></i>  Matches shall be played according to the rules of T20 proposed by ICC.</p>
+																	<p><i class="fa fa-eercast" aria-hidden="true"></i> The team consists of <strong>16 players</strong>.</p>
+																</div>
+
+															</div>
+															<div class="differentButtons">
+																<a href="https://docs.google.com/document/d/1gwjvRuDBcKVo-cFRD718R9O85K9vzUX2rtiz9pX_bnM/edit?usp=sharing" target="_blank" class="contentButton">Rules </a>
+																<a href="#" class="disableButton">Schedule</a>
+																<a href="#" class="disableButton">Results</a>
+
+															</div>
+														</div>
+													</li>
+
+													<li data-date="08/01/2017">
+														<h2>Football</h2>
+														<em>Important Rules</em>
+														<div>
+															<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/football1.png" height="100%" width="100%" /></div>
+															<div style="display: inline;float: left; " class="rule" >
+																<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+																	<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+																		<p><i class="fa fa-eercast" aria-hidden="true"></i>  Matches shall be played according to the rules of FIFA as adopted from time to time by the All India Football Federation unless otherwise modified.</p>
+																		<p><i class="fa fa-eercast" aria-hidden="true"></i> Every team shall submit a list of players, <strong>not exceeding 16</strong>, who may participate in the tournament.</p>
+																	</div>
+
+																</div>
+																<div class="differentButtons">
+																	<a href="https://docs.google.com/document/d/1xFWnl-C5pFGmicOvCCBxvV3lrBOKOlzRsW5Ls75kloY/edit?usp=sharing" target="_blank" class="contentButton">Rules </a>
+																	<a href="#" class="disableButton">Schedule</a>
+																	<a href="#" class="disableButton">Results</a>
+
+																</div>
+															</div>
+														</li>
+
+														<li data-date="09/01/2017">
+															<h2>Handball</h2>
+															<em>Important Rules</em>
+															<div>
+																<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/handball.png" height="100%" width="100%" /></div>
+																<div style="display: inline;float: left; " class="rule" >
+																	<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+																		<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+																			<p><i class="fa fa-eercast" aria-hidden="true"></i>  The tournament will be conducted according to the International Handball Federation Rules as adopted from time to time by the Indian Handball Federation, unless otherwise modified.</p>
+																			<p><i class="fa fa-eercast" aria-hidden="true"></i> A <strong>maximum of 12 players</strong> are allowed in a team in which 5 is reserve.</p>
+																		</div>
+
+																	</div>
+																	<div class="differentButtons">
+																		<a href="https://docs.google.com/document/d/14voMOuDu4Nge78fLlPzUDF7bveRBM25i1vFeHBTmG4M/edit" target="_blank" class="contentButton">Rules </a>
+																		<a href="#" class="disableButton">Schedule</a>
+																		<a href="#" class="disableButton">Results</a>
+
+																	</div>
+																</div>
+															</li>
+
+															<li data-date="10/01/2017">
+																<h2>Hockey</h2>
+																<em>Important Rules</em>
+																<div>
+																	<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/hockey1.png" height="100%" width="100%" /></div>
+																	<div style="display: inline;float: left; " class="rule" >
+																		<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+																			<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+																				<p><i class="fa fa-eercast" aria-hidden="true"></i>  Matches shall be played according to the rules of the FIH (Fédération Internationale de Hockey) as adopted from time to time by the Indian Hockey Federation unless otherwise modified.</p>
+																				<p><i class="fa fa-eercast" aria-hidden="true"></i> Game will consist of two teams of <strong>16 players</strong> each. 11 players would enter the field at a time.</p>
+																			</div>
+
+																		</div>
+																		<div class="differentButtons">
+																			<a href="https://docs.google.com/document/d/1um7uiWEZLlOYJGDVMopU4hs2jEaSOdvt0p28zJsO-80/edit" target="_blank" class="contentButton">Rules </a>
+																			<a href="#" class="disableButton">Schedule</a>
+																			<a href="#" class="disableButton">Results</a>
+
+																		</div>
+																	</div>
+																</li>
+
+																<li data-date="11/01/2017">
+																	<h2>Kabaddi</h2>
+																	<em>Important Rules</em>
+																	<div>
+																		<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/Kabaddi.png" height="100%" width="100%" /></div>
+																		<div style="display: inline;float: left; " class="rule" >
+																			<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+																				<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+																					<p><i class="fa fa-eercast" aria-hidden="true"></i> The tournament will be conducted according to the International Kabaddi Federation Rules as adopted from time to time by the Indian Kabaddi Federation, unless otherwise modified.</p>
+																					<p><i class="fa fa-eercast" aria-hidden="true"></i> Each team contains <strong>12 players</strong> in which 5 players is in reserve.</p>
+																				</div>
+
+																			</div>
+																			<div class="differentButtons">
+																				<a href="https://docs.google.com/document/d/1TyXdARkoY7F24VBjdx1wFOsFwV3NBiBdnCXWP2ttVKM/edit?usp=sharing" target="_blank" class="contentButton">Rules </a>
+																				<a href="#" class="disableButton">Schedule</a>
+																				<a href="#" class="disableButton">Results</a>
+
+																			</div>
+																		</div>
+																	</li>
+
+																	<li data-date="12/01/2017">
+																		<h2>Kho-kho</h2>
+																		<em>Important Rules</em>
+																		<div>
+																			<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/KHO kho.png" height="100%" width="100%" /></div>
+																			<div style="display: inline;float: left; " class="rule" >
+																				<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+																					<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+																						<p><i class="fa fa-eercast" aria-hidden="true"></i> Rules given by the Kho Kho Federation of India will be followed.</p>
+																						<p><i class="fa fa-eercast" aria-hidden="true"></i> Each team consists of <strong>12 players</strong>, but only 9 players take the field.</p>
+																					</div>
+
+																				</div>
+																				<div class="differentButtons">
+																					<a href="https://docs.google.com/document/d/1skMHuhG-d0QAqNlWUYEAxyK-6vXI_BCEKamVpuNa0Zs/edit?usp=sharing" target="_blank" class="contentButton">Rules </a>
+																					<a href="#" class="disableButton">Schedule</a>
+																					<a href="#" class="disableButton">Results</a>
+
+																				</div>
+																			</div>
+																		</li>
+
+																		<li data-date="13/01/2017">
+																			<h2>Lawn Tennis</h2>
+																			<em>Important Rules</em>
+																			<div>
+																				<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/LAWN tennis1.png" height="100%" width="100%" /></div>
+																				<div style="display: inline;float: left; " class="rule" >
+																					<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+																						<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+																						<p><i class="fa fa-eercast" aria-hidden="true"></i> The rules of the International Tennis Federation as adopted from time to time by the All India Lawn Tennis Association shall apply, unless otherwise modified.</p>
+																							<p><i class="fa fa-eercast" aria-hidden="true"></i> The team strength should be <strong>minimum - 3</strong>,<strong> maximum - 4</strong> for men, and <strong>minimum - 2</strong>, <strong>maximum - 4</strong> for women.</p>
+																							</div>
+
+																						</div>
+																						<div class="differentButtons">
+																							<a href="https://docs.google.com/document/d/1RpcamrxWS6-9U3zb9MTO1eOfw1ISTWKyASmygAj17MQ/edit?usp=sharing" target="_blank" class="contentButton">Rules </a>
+																							<a href="#" class="disableButton">Schedule</a>
+																							<a href="#" class="disableButton">Results</a>
+
+																						</div>
+																					</div>
+																				</li>
+
+																				<li data-date="14/01/2017">
+																					<h2>Mr. Udghosh</h2>
+																					<em>Important Rules</em>
+																					<div>
+																						<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/mr udghosh.png" height="100%" width="95%" /></div>
+																						<div style="display: inline;float: left; " class="rule" >
+																							<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+																								<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+																									<p><i class="fa fa-eercast" aria-hidden="true"></i>  The competition will be conducted according to the NPC Men’s Physique Rules.</p>
+																									<p><i class="fa fa-eercast" aria-hidden="true"></i> There will be just a single category (open) for all the participants.</p>
+																									</div>
+
+																								</div>
+																								<div class="differentButtons">
+																									<a href="https://docs.google.com/document/d/132Zgr4fI05gXkOp5avm9JIjiTObzJu73xTW-8fT80eo/edit?usp=sharing" target="_blank" class="contentButton">Rules </a>
+																									<a href="#" class="disableButton">Schedule</a>
+																									<a href="#" class="disableButton">Results</a>
+
+																								</div>
+																							</div>
+																						</li>
+
+																						<li data-date="15/01/2017">
+																							<h2>Powerlifting</h2>
+																							<em>Important Rules</em>
+																							<div>
+																								<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/powerlifting.png" height="100%" width="95%" /></div>
+																								<div style="display: inline;float: left; " class="rule" >
+																									<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+																										<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+																											<p><i class="fa fa-eercast" aria-hidden="true"></i>  The competition will be held as per the International Powerlifting Federation Rules unless otherwise modified.</p>
+																											<p><i class="fa fa-eercast" aria-hidden="true"></i><strong>Only 2</strong> participants would be allowed in each category from a college.</p>
+																											<p><i class="fa fa-eercast" aria-hidden="true"></i>Athletes in the sport are divided in five weight classes and placing is based on the total weight lifted on the three main lifts:
+																											</p>
+																											<p style="padding-left: 30px;">1. Squat</p>
+																											<p style="padding-left: 30px;">2.  Bench Press</p>
+																											<p style="padding-left: 30px;">3.  Deadlift</p></div>
+
+																										</div>
+																										<div class="differentButtons">
+																											<a href="https://docs.google.com/document/d/1T4vRPYJaegxHVaFPqei02eQrKPirc-Oq-rpXKYJoHWY/edit?usp=sharing" target="_blank" class="contentButton">Rules </a>
+																											<a href="#" class="disableButton">Schedule</a>
+																											<a href="#" class="disableButton">Results</a>
+
+																										</div>
+																									</div>
+																								</li>
+
+																								<li data-date="16/01/2017">
+																									<h2>Skating</h2>
+																									<em>Important Rules</em>
+																									<div>
+																										<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/skating.png" height="100%" width="100%"/></div>
+																										<div style="display: inline;float: left; " class="rule" >
+																											<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+																												<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+																													<p><i class="fa fa-eercast" aria-hidden="true"></i>  The competition will be held as per the ISU (<i>international Skating Union</i>) rules.</p>
+																													<p><i class="fa fa-eercast" aria-hidden="true"></i>There will be 3 events:</p>
+																													<p style="padding-left: 30px;">1. <strong>Skating Hockey</strong>: 5 team members per team</p>
+																											<p style="padding-left: 30px;">2.  <strong>Speed Skating</strong>: Individual event; Maximum of 2 participants from a college.</p>
+																											<p style="padding-left: 30px;">3. <strong>Relay Race</strong>: 4 participants per team.</p>
+																													</div>
+
+																												</div>
+																												<div class="differentButtons">
+																													<a href="https://docs.google.com/document/d/1UjizFoU7oBlLnWrl0Bg1C6gIGdpE_oroBC6CXk_uLAs/edit?usp=sharing" target="_blank" class="contentButton">Rules </a>
+																													<a href="#" class="disableButton">Schedule</a>
+																													<a href="#" class="disableButton">Results</a>
+
+																												</div>
+																											</div>
+																										</li>
+
+																										<li data-date="17/01/2017">
+																											<h2>Sports Quiz</h2>
+																											<em>Important Rules</em>
+																											<div>
+																												<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/sports quiz.png" height="100%" width="100%" /></div>
+																												<div style="display: inline;float: left; " class="rule" >
+																													<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+																														<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+																															<p><i class="fa fa-eercast" aria-hidden="true"></i>  Players have to register as a team of 3 people which includes 1 reserve member.</p>
+																															<p><i class="fa fa-eercast" aria-hidden="true"></i> The team can have <strong>any number of men and women</strong>. </p>
+																															<p><i class="fa fa-eercast" aria-hidden="true"></i> 2 members from a team participate at a stretch in one round.
+
+																															</p>
+																															<p><i class="fa fa-eercast" aria-hidden="true"></i> From one college a maximum of <strong>4 teams</strong> can participate.
+
+																															</p></div>
+
+																														</div>
+																														<div class="differentButtons">
+																															<a href="https://docs.google.com/document/d/1ic9fsAwtWvKrhbTtkyaHJ8RJ8EtBuiAyxCKvGlitM4I/edit?usp=sharing" target="_blank" class="contentButton">Rules </a>
+																															<a href="#" class="disableButton">Schedule</a>
+																															<a href="#" class="disableButton">Results</a>
+
+																														</div>
+																													</div>
+																												</li>
+
+																												<li data-date="18/01/2017">
+																													<h2>Squash</h2>
+																													<em>Important Rules</em>
+																													<div>
+																														<div style="display: inline;float: left;width: 20%; padding: auto 5px;" id="sporticon" ><img src="img/sporticon/squash.png" height="100%" width="100%" /></div>
+																														<div style="display: inline;float: left; " class="rule" >
+																															<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+																																<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+																																	<p><i class="fa fa-eercast" aria-hidden="true"></i> Squash competition shall be conducted under World Squash Federation rules adopted time to time by the Squash Racket Federation of India unless otherwise modified in these rules. </p>
+																																	<p><i class="fa fa-eercast" aria-hidden="true"></i> Men: Every college should submit a list of <strong> either 3 or 4 players</strong>.</p>
+																																	<p><i class="fa fa-eercast" aria-hidden="true"></i> Women: A college is allowed to submit <strong>individual entries</strong> (not exceeding 3).
+																																	</p></div>
+
+																																</div>
+																																<div class="differentButtons">
+																																	<a href="https://docs.google.com/document/d/164RJnlPFtpHxzr4j5R0Rmtl60F3Wr-IP80VRH3-iups/edit?usp=sharing" target="_blank" class="contentButton">Rules </a>
+																																	<a href="#" class="disableButton">Schedule</a>
+																																	<a href="#" class="disableButton">Results</a>
+
+																																</div>
+																															</div>
+																														</li>
+
+																														<li data-date="19/01/2017">
+																															<h2>Swimming</h2>
+																															<em>Important Rules</em>
+																															<div>
+																																<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/swimming1.png" height="100%" width="100%" /></div>
+																																<div style="display: inline;float: left; " class="rule" >
+																																	<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+																																		<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+																																			<p><i class="fa fa-eercast" aria-hidden="true"></i>  Swimming competition shall be conducted under FINA rules adopted time to time by the Swimming Federation of India unless otherwise modified in these rules.</p>
+																																			<p><i class="fa fa-eercast" aria-hidden="true"></i> Each college shall be entitled to enter not more than <strong>2 competitors per event</strong>. For relay races, not more than <strong>4 entries</strong> with one reserve per event shall be allowed.</p>
+																																			</div>
+
+																																		</div>
+																																		<div class="differentButtons">
+																																			<a href="https://docs.google.com/document/d/1zMcWep0mrgFp8WADd3LcG2kd73q1oqNSK-h9lU49RIE/edit?usp=sharing" target="_blank" class="contentButton">Rules </a>
+																																			<a href="#" class="disableButton">Schedule</a>
+																																			<a href="#" class="disableButton">Results</a>
+
+																																		</div>
+																																	</div>
+																																</li>
+
+																																<li data-date="20/01/2017">
+																																	<h2>Table Tennis</h2>
+																																	<em>Important Rules</em>
+																																	<div>
+																																		<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/table tennis.png" height="100%" width="100%" /></div>
+																																		<div style="display: inline;float: left; " class="rule" >
+																																			<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+																																				<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+																																					<p><i class="fa fa-eercast" aria-hidden="true"></i> The rules of the tournament will be of the International Table Tennis Federation as adopted from time to time by the Table Tennis Federation of India shall apply unless otherwise modified.</p>
+																																					<p><i class="fa fa-eercast" aria-hidden="true"></i> There can be a <strong> maximum of 4 players</strong> and a minimum of 3 players in each team for men’s and <strong>maximum of 4</strong> and minimum of 2 for women’s team.</p>
+																																					</div>
+
+																																				</div>
+																																				<div class="differentButtons">
+																																					<a href="https://docs.google.com/document/d/1zunI4SI9ohzJfKVLt1Jo9w5rTb4-o4gKfgci8HId35U/edit?usp=sharing" target="_blank" class="contentButton">Rules </a>
+																																					<a href="#" class="disableButton">Schedule</a>
+																																					<a href="#" class="disableButton">Results</a>
+
+																																				</div>
+																																			</div>
+																																		</li>
+
+																																		<li data-date="21/01/2017">
+																																			<h2>Taekwondo</h2>
+																																			<em>Important Rules</em>
+																																			<div>
+																																				<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/taekwando1.png" height="100%" width="100%" /></div>
+																																				<div style="display: inline;float: left; " class="rule" >
+																																					<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+																																						<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+																																							<p><i class="fa fa-eercast" aria-hidden="true"></i>  The competition will be held as per the WTF (World Taekwondo Federation) rules.</p>
+																																							<p><i class="fa fa-eercast" aria-hidden="true"></i> There will be two events:</p>
+																																								<p style="padding-left: 30px;">1. Poomsae</p>
+																																								<p style="padding-left: 30px;">2.  Breaking</p>
+																																							</div>
+
+																																						</div>
+																																						<div class="differentButtons">
+																																							<a href="https://docs.google.com/document/d/13so8DdHgPLiPHid6aVPtGIgjgVqLv-c2ioIRl_Ao6kw/edit?usp=sharing" target="_blank" class="contentButton">Rules </a>
+																																							<a href="#" class="disableButton">Schedule</a>
+																																							<a href="#" class="disableButton">Results</a>
+
+																																						</div>
+																																					</div>
+																																				</li>
+
+																																				<li data-date="22/01/2017">
+																																					<h2>Volleyball</h2>
+																																					<em>Important Rules</em>
+																																					<div>
+																																						<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/volleyball1.png" height="100%" width="100%" /></div>
+																																						<div style="display: inline;float: left; " class="rule" >
+																																							<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+																																								<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+																																									<p><i class="fa fa-eercast" aria-hidden="true"></i> The rules of the International Volleyball Federation as adopted from time to time by the All India Volleyball Association shall apply, unless otherwise modified.</p>
+																																									<p><i class="fa fa-eercast" aria-hidden="true"></i>Each college must submit the list of players, <strong>not more than 12 players</strong>.</p>
+																																									</div>
+
+																																								</div>
+																																								<div class="differentButtons">
+																																									<a href="https://docs.google.com/document/d/1gighRbMjH49lZEg6IvYiMoU3fx09hFs52VT2SVSnN3k/edit?usp=sharing" target="_blank" class="contentButton">Rules </a>
+																																									<a href="#" class="disableButton">Schedule</a>
+																																									<a href="#" class="disableButton">Results</a>
+
+																																								</div>
+																																							</div>
+																																						</li>
+
+																																							<li data-date="23/01/2017">
+																																					<h2>Weightlifting</h2>
+																																					<em>Important Rules</em>
+																																					<div>
+																																						<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/powerlifting.png" height="100%" width="95%" /></div>
+																																						<div style="display: inline;float: left; " class="rule" >
+																																							<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+																																								<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+																																									<p><i class="fa fa-eercast" aria-hidden="true"></i> The competition will be held as per the International Weightlifting Federation Rules unless otherwise modified.</p>
+																																									<p><i class="fa fa-eercast" aria-hidden="true"></i><strong>Only 2</strong> participants would be allowed in each category from a college.</p>
+																																									
+																																									<p><i class="fa fa-eercast" aria-hidden="true"></i> Athletes in the sport are divided in five weight classes and placing is based on the total weight lifted on the two main lifts:</p>
+																																											<p style="padding-left: 30px;">1. Snatch</p>
+																																								<p style="padding-left: 30px;">2.  Clean and Jerk</p>
+																																									</div>
+
+
+																																								</div>
+																																								<div class="differentButtons">
+																																									<a href="https://docs.google.com/document/d/1BZGTwarR4tC0DPHXzzurR7ja8Zu16owwgnQ7edQX8IQ/edit?usp=sharing"  target="_blank" class="contentButton">Rules </a>
+																																									<a href="#" class="disableButton">Schedule</a>
+																																									<a href="#" class="disableButton">Results</a>
+
+																																								</div>
+																																							</div>
+																																						</li>
+
+
+																																						<li data-date="24/01/2017">
+																																							<h2>General rules</h2>
+																																							<em>Follow all sports</em>
+																																							<div>
+																																								<div style="display: inline;float: left;width: 20%;" id="sporticon" ><img src="img/sporticon/general.png" height="100%" width="100%" /></div>
+																																								<div style="display: inline;float: left; " class="rule" >
+																																									<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+																																										<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+
+																																											<p><i class="fa fa-eercast" aria-hidden="true"></i> Matches shall be played according to the rules of respective International Federation as adopted from time to time by the All India Federation of the respective sport unless otherwise modified.</p>
+																																											<p><i class="fa fa-eercast" aria-hidden="true"></i> Decision made by Judges/Referee will be final and binding.</p>
+																																											<p><i class="fa fa-eercast" aria-hidden="true"></i> Rules and schedule are subject to change in the spirit of game and due to external factors.
+																																											</p>
+																																												<p><i class="fa fa-eercast" aria-hidden="true"></i>All participants must be present with their Institute and Udghosh ID cards at the commencement of the match.
+																																											</p>
+																																												<p><i class="fa fa-eercast" aria-hidden="true"></i> The rules are subject to minor changes. Please revisit your respective event on our website after 1st October for updated information.
+																																											</p>
+																																									</div>
+
+																																										</div>
+																																										<div class="differentButtons">
+																																											<a href="https://docs.google.com/document/d/1BJ0jx1Hod7L6pNqaDvQD7I6yM3EX_ij1TzlL_kpulS0/edit?usp=sharing" target="_blank" class="contentButton">Points for GC</a>
+																																											<a href="#" class="disableButton">Schedule</a>
+																																											<a href="#" class="disableButton">Results</a>
+
+																																										</div>
+																																									</div>
+																																								</li>
+																																							</ol>
+																																						</div> <!-- .events-content -->
+
+																																						<div class="timeline">
+																																							<div class="events-wrapper">
+																																								<div class="events">
+																																									<ol>
+																																										<li><a href="#0" data-date="02/01/2017" class="selected">Athletics</a></li>
+																																										<li><a href="#0" data-date="03/01/2017">Badminton</a></li>
+																																										<li><a href="#0" data-date="04/01/2017">Basketball</a></li>
+																																										<li><a href="#0" data-date="05/01/2017">Carrom</a></li>
+																																										<li><a href="#0" data-date="06/01/2017">Chess</a></li>
+																																										<li><a href="#0" data-date="07/01/2017">Cricket</a></li>
+																																										<li><a href="#0" data-date="08/01/2017">Football</a></li>
+																																										<li><a href="#0" data-date="09/01/2017">Handball</a></li>
+																																										<li><a href="#0" data-date="10/01/2017">Hockey</a></li>
+																																										<li><a href="#0" data-date="11/01/2017">Kabaddi</a></li>
+																																										<li><a href="#0" data-date="12/01/2017">Kho-kho</a></li>
+																																										<li><a href="#0" data-date="13/01/2017">Lawn Tennis</a></li>
+																																										<li><a href="#0" data-date="14/01/2017">Mr. Udghosh</a></li>
+																																										<li><a href="#0" data-date="15/01/2017">Powerlifting</a></li>
+																																										<li><a href="#0" data-date="16/01/2017">Skating</a></li>
+																																										<li><a href="#0" data-date="17/01/2017">Sports Quiz</a></li>
+																																										<li><a href="#0" data-date="18/01/2017">Squash</a></li>
+																																										<li><a href="#0" data-date="19/01/2017">Swimming</a></li>
+																																										<li><a href="#0" data-date="20/01/2017">Table Tennis</a></li>
+																																										<li><a href="#0" data-date="21/01/2017">Taekwondo</a></li>
+																																										<li><a href="#0" data-date="22/01/2017">Volleyball</a></li>
+																																										<li><a href="#0" data-date="23/01/2017">Weightlifting</a></li>
+																																										<li><a href="#0" data-date="24/01/2017">General rules</a></li>
+
+																																									</ol>
+
+																																									<span class="filling-line" aria-hidden="true"></span>
+																																								</div> <!-- .events -->
+																																							</div> <!-- .events-wrapper -->
+
+																																							<ul class="cd-timeline-navigation">
+																																								<li><a href="#0" class="prev inactive">Prev</a></li>
+																																								<li><a href="#0" class="next">Next</a></li>
+																																							</ul> <!-- .cd-timeline-navigation -->
+																																						</div> <!-- .timeline -->
+																																					</div>
+
+																																					<div class="foot">
+																																						<div class="footer-social-icons">
+																																							<ul class="social-icons">
+																																								<li><a href="https://www.facebook.com/udghosh.iitk/" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+																																								<li><a href="https://twitter.com/udghoshiitk" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+																																								<li><a href="https://www.youtube.com/user/udghosh11" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+																																								<li><a href="https://www.linkedin.com/company-beta/7575911/" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+																																								<li><a href="https://plus.google.com/101958681892074759002?hl=en" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+																																								<div id="register" > <li  class="register" ><a href="Register/signup.html"  >REGISTER</a></li></div>
+
+
+																																							</ul>
+
+																																						</div>
+																																						<div id="creative" style="color: #cccccc;  float: right; margin-right: 30px;margin-top:7px;"><i class="fa fa-copyright" aria-hidden="true"></i><span style="padding-left: 5px;font-size: 13px;">Creatives Udghosh 2017</span></div>
+																																					</div>
+
+
+																																				</div>
+																																			</div>
+
+																																			<script>
+																																				function myFunction() {
+																																					document.getElementById("myLink").disabled = true;
+																																				}
+																																			</script>
+
+
+																																			<script src="js/jquery-2.1.4.js"></script>
+																																			<script src="js/jquery.mobile.custom.min.js"></script>
+																																			<script src="js/main.js"></script> <!-- Resource jQuery -->
+																																		</body>
+
+																																		          <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="color: #333;">Frequently Asked Questions</h4>
+      </div>
+      <div class="modal-body" style="color: #333;">
+        <h4><strong>Q.&nbsp;What is the procedure to be followed after reaching IITK?</strong></h4>
+        <p style="padding-left: 20px; color: #333;">You need to report to the Hospitality Desk, Students Activity Centre (SAC) along with your college identity card. <br>You will have to produce the reciept of your online payment and a recent passport size photograph. <br>Booklet will act as your identity card in campus. <br>In case of a big contingent, contingent leader needs to present the ID cards of all the people in his contingent at the hospitality desk along with a list of all the people. Accommodation would be strictly on shared basis. </p>
+
+
+                <h4 class="q"><strong>Q.&nbsp;Can two participants be from different colleges in a team event? </strong></h4>
+        <p style="padding-left: 20px;color: #333;">No, Udghosh does not allow cross participation from colleges in a team event.</p>
+
+
+                <h4 class="q"><strong>Q.&nbsp;Can I get accommodation on 10th october or before although the festival starts from 12th october?</strong></h4>
+        <p style="padding-left: 20px;color: #333;">No, accommodation will be provided from 11th evening. All the participants coming before can stay in hotels outside IIT Kanpur.</p>
+
+                
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <style type="text/css">
+          .q {margin-top: 30px;}
+        </style>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+																																		</html>
