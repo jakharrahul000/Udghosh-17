@@ -98,7 +98,7 @@
 
     .card .card-heading.image .card-heading-header {
         display: inline-block;
-        
+
         vertical-align: top;
     }
 
@@ -251,7 +251,7 @@
 
 /*    .card.hovercard:hover {
 
-        
+
         cursor: pointer;
         transition: 0.5s;
     }*/
@@ -341,10 +341,10 @@
     border-radius: 50%;
     position: relative;
     cursor: default;
-    box-shadow: 
+    box-shadow:
         inset 0 0 0 16px rgba(255,255,255,0.6),
         0 1px 2px rgba(0,0,0,0.1);
-        
+
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -352,7 +352,7 @@
     transition: all 0.4s ease-in-out;
 }
 
-.ch-img-1 { 
+.ch-img-1 {
     background-image: url('../img/core-team/nitin.jpg');
     width: 240px;
     height: 240px;
@@ -360,118 +360,118 @@
 
 }
 
-.ch-img-2 { 
+.ch-img-2 {
     background-image: url('../img/core-team/tarun.jpg');
     width: 240px;
     height: 240px;
     background-size:cover
 }
 
-.ch-img-3 { 
+.ch-img-3 {
     background-image: url('../img/core-team/avani.jpg');
     width: 240px;
     height: 240px;
     background-size:cover
 }
 
-.ch-img-4 { 
+.ch-img-4 {
     background-image: url('../img/core-team/kmittal.jpg');
     width: 240px;
     height: 240px;
     background-size:cover
 }
 
-.ch-img-5 { 
+.ch-img-5 {
     background-image: url('../img/core-team/kapil.jpg');
     width: 240px;
     height: 240px;
     background-size:cover
 }
 
-.ch-img-6 { 
+.ch-img-6 {
     background-image: url('../img/core-team/monil.jpg');
     width: 240px;
     height: 240px;
     background-size:cover
 }
 
-.ch-img-7 { 
+.ch-img-7 {
     background-image: url('../img/core-team/himanshuJ.jpg');
     width: 240px;
     height: 240px;
     background-size:cover
 }
 
-.ch-img-8 { 
+.ch-img-8 {
     background-image: url('../img/core-team/ujjwal.jpg');
     width: 240px;
     height: 240px;
     background-size:cover
 }
 
-.ch-img-9 { 
+.ch-img-9 {
     background-image: url('../img/core-team/shash.jpg');
     width: 240px;
     height: 240px;
     background-size:cover
 }
 
-.ch-img-10 { 
+.ch-img-10 {
     background-image: url('../img/core-team/naveed.jpg');
     width: 240px;
     height: 240px;
     background-size:cover
 }
 
-.ch-img-11 { 
+.ch-img-11 {
     background-image: url('../img/core-team/shr.jpg');
     width: 240px;
     height: 240px;
     background-size:cover
 }
-.ch-img-12 { 
+.ch-img-12 {
     background-image: url('../img/core-team/harsh.jpg');
     width: 240px;
     height: 240px;
     background-size:cover
 }
 
-.ch-img-13 { 
+.ch-img-13 {
     background-image: url('../img/core-team/shubham.jpg');
     width: 240px;
     height: 240px;
     background-size:cover
 }
 
-.ch-img-14 { 
+.ch-img-14 {
     background-image: url('../img/core-team/prashant.jpg');
     width: 240px;
     height: 240px;
     background-size:cover
 }
 
-.ch-img-15 { 
+.ch-img-15 {
     background-image: url('../img/core-team/bishal.jpg');
     width: 240px;
     height: 240px;
     background-size:cover
 }
 
-.ch-img-16 { 
+.ch-img-16 {
     background-image: url('../img/core-team/abhishek.jpg');
     width: 240px;
     height: 240px;
     background-size:cover
 }
 
-.ch-img-17 { 
+.ch-img-17 {
     background-image: url('../img/core-team/sachin.jpg');
     width: 240px;
     height: 240px;
     background-size:cover
 }
 
-.ch-img-18 { 
+.ch-img-18 {
     background-image: url('../img/core-team/shreya.jpg');
     width: 240px;
     height: 240px;
@@ -487,19 +487,19 @@
     height: inherit;
     border-radius: 50%;
     opacity: 0;
-    
+
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
-    
+
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
     -o-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0);
-    
+
     -webkit-backface-visibility: hidden;
 
 }
@@ -513,8 +513,8 @@
     padding: 45px 0 0 0;
     height: 140px;
     font-family: 'Open Sans', Arial, sans-serif;
-    text-shadow: 
-        0 0 1px #fff, 
+    text-shadow:
+        0 0 1px #fff,
         0 1px 2px rgba(0,0,0,0.3);
 }
 
@@ -552,7 +552,7 @@
 }
 
 .ch-item:hover {
-    box-shadow: 
+    box-shadow:
         inset 0 0 0 1px rgba(255,255,255,0.1),
         0 1px 2px rgba(0,0,0,0.1);
 }
@@ -571,15 +571,21 @@
 
 
 @media only screen and (max-width: 767px){
-                    .offset {margin-left: 74px;}
-                    .offset1 {margin-left: 37px;}
-    .offset-one{margin-left: 74px;}
-            .ch-img-1, .ch-img-2, .ch-img-3, .ch-img-4, .ch-img-5, .ch-img-6, .ch-img-7, .ch-img-8, .ch-img-9, .ch-img-10, .ch-img-11, .ch-img-12, .ch-img-13 {
-        width: 200px;
-        height: 200px;
-    }    
-    .blah{margin-left: 74px;}
-.card.hovercard{text-align: left;}
+                    .offset {    margin: auto;
+                                display: inline-flex;}
+                    .offset1 {    margin: auto;
+    display: inline-flex; }
+                    .blah{    margin: auto;
+    display: inline-flex;}
+    .offset-one{    margin: auto;
+    display: inline-flex;}
+            .ch-img-1, .ch-img-2, .ch-img-3, .ch-img-4, .ch-img-5, .ch-img-6, .ch-img-7, .ch-img-8, .ch-img-9, .ch-img-10, .ch-img-11, .ch-img-12, .ch-img-13, .ch-img-14, .ch-img-15, .ch-img-16, .ch-img-17, .ch-img-18 {
+        width: 250px;
+        height: 250px;
+    }
+    .blah{    margin: auto;
+    display: inline-flex;}
+.card.hovercard{text-align: center;;}
 .card.hovercard .info{padding: 4px 35px 10px;}
 .card.hovercard .bottom{padding: 0 80px;}
 
@@ -601,7 +607,7 @@
             .ch-img-1, .ch-img-2, .ch-img-3, .ch-img-4, .ch-img-5, .ch-img-6, .ch-img-7, .ch-img-8, .ch-img-9, .ch-img-10, .ch-img-11, .ch-img-12, .ch-img-13 {
         width: 200px;
         height: 200px;
-    }    
+    }
     /*div.card.hovercard{padding-left: 100px}*/
 
 }
@@ -633,11 +639,7 @@
         height: 240px;
     }
 
+}
 
 
     }
-
-
-
-
-

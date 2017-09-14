@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Marathon</title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Marathon Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/style2.css">
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+
+<!-- //js -->
+<!-- font-awesome-icons -->
+<link href="css/font-awesome.css" rel="stylesheet">
+<!-- //font-awesome-icons -->
+<link href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700&amp;subset=latin-ext" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<style>
+@media (min-width: 768px){
+.modal-content {
+	-webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	}
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px;
+		width:100% !important;
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+canvas {
+  width: 900px;
+  height: 200px;
+
+  display: block;
+  position: relative;
+  background: transparent;
+  float: left;
+  margin-top: 88vh;
+
+  font-size: 10px;
+  margin-left: 5vh;
+  z-index: 0;
+}
+@media only screen and (max-width: 600px){
+  canvas{
+    display: none;
+  }
+}
+
+.prizes{
+	height: 320px;
+	width:100%;
+	padding: auto;
+}
+.model-ul-head{
+	margin:0;
+	width:57%;
+}
+
+.ul-modal-list{
+	list-style-type: disc;
+	 list-style-position: inside;
+
+}
+.displayDots{
+	display: list-item ;
+	style="list-style-type:square;
+
+}
+.row h1{
+margin-left: 0 auto;
+display: block;
+width: 100%;
+text-align:center;
+}
+
+
+</style>
+
+</head>
+
+<body>
+<!--navBar-->
+
+<div class="topnav" id="myTopnav">
+		<div class="navbar-header"><a class="navbar-brand" href="../index.html"><img src="img/logo.png" >
+</a></div>
+		<span class="cl-effect-1"><a href="#">HOME</a></span>
+		<span class="cl-effect-1"><a href="#map">MAP</a></span>
+		<span class="cl-effect-1"><a href="#sponsors">SPONSORS</a></span>
+		<span class="cl-effect-1"><a href="#contact">CONTACT</a></span>
+		<a href="javascript:void(0);" style="font-size:15px; color: #333;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div class = "row" style= "height:40px;">
+
+</div>
+<!-->
+
+<!-- banner -->
+	<div class="banner">
+		<div class="container">
+			<div class="header">
+				<div class="w3_agile_logo">
+					<h1><a href="index.html">Kanpur Marathon<span>10 September, 2017</span></a></h1>
+				</div>
+
+				<div class="clearfix"> </div>
+			</div>
+			<div class="agile_banner_info">
+				<h3><span>finishing</span></h3><p style="font-size:30px;color:white;font-family: 'Open Sans', sans-serif;">A MARATHON IS A STATE OF MIND<br/> THAT SAYS ANYTHING IS POSSIBLE.</p>
+			</div>
+			<div class="row">
+
+
+			<div class="agileits_w3layouts_more menu__item">
+				<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal1">Know More</a>
+			</div>
+			<div class="agileits_w3layouts_more menu__item" style="float:right;">
+				<!--<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal1">Learn More</a>-->
+				<a style="cursor: pointer;" href="https://docs.google.com/forms/d/e/1FAIpQLSfClJHh0CebqLxwd6u-loNgfZ4lrBT0WHGYsIdeG8rwcZHPHg/viewform" target="_blank" class="menu__link">Register</a>
+			</div>
+			</div>
+			<!--<div class="w3_agileits_social_media">
+				<ul>
+					<li class="agileinfo_share"><a href="#" class="menu__link">Share On</a></li>
+					<li><a href="#" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#" class="wthree_dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+					<li><a href="#" class="wthree_behance"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>-->
+			<!--clock-->
+			<div class ="row cooldown">
+
+			<div style="float:left;padding-bottom:20px;margin-left: -25em;">
+			<div class="featues">
+				<div class="container">
+					<div class="agileits_countdown">
+						<div class="clock w3agile">
+							<div class="column days">
+								<div class="timer" id="days"></div>
+								<div class="w3ls_text">DAYS</div>
+							</div>
+
+							<div class="column">
+								<div class="timer" id="hours"></div>
+								<div class="w3ls_text">HOURS</div>
+							</div>
+
+							<div class="column">
+								<div class="timer" id="minutes"></div>
+								<div class="w3ls_text">MINUTES</div>
+							</div>
+
+							<div class="column">
+								<div class="timer" id="seconds"></div>
+								<div class="w3ls_text">SECONDS</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+			<!--//-->
+
+		</div>
+	</div>
+<!-- //banner -->
+
+
+<!-- bootstrap-pop-up -->
+	<div class="modal video-modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					Marathon
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<section>
+					<div class="modal-body">
+						<div class="row" style="margin-left:15px;margin-right:15px;width:100%;">
+
+						<div class="col-md-6">
+						<h2>Race Information</h2>
+						<hr class="model-ul-head">
+						<br />
+						<ul class="ul-modal-list">
+							<li class="displayDots">
+								- Date : <strong>10 September, 2017 | Sunday</strong>
+							</li>
+							<li class="displayDots">
+								- Venue : <strong>Green Park Stadium, Kanpur</strong>
+							</li>
+							<li class ="displayDots">
+								- Time : <strong>06 : 00 AM</strong>
+							</li>
+							<li class="displayDots">
+								- Length : <strong>5 km track</strong>
+							</li>
+							<li>
+								- No Registration Fee.
+							</li>
+							<li>
+								- <strong>Certificates and goodies</strong> for all the participants.
+							</li>
+						</ul>
+
+						</div>
+						<div class="col-md-6">
+							<h2>Facilities</h2>
+							<hr class="model-ul-head" style="width:31%;">
+							<br />
+							<ul style="list-style-type: disc !important; ">
+								<li>
+									1. <strong>Medical Facilities</strong> - We will have enough number of ambulances with us for any medical problem. Ambulance will have all the basic medical facilities.
+								</li>
+								<li>
+									2. <strong>Backing vehicles</strong> - If any of the participants gets exhausted, we will provide vehicles for them to reach to final destination.
+								</li>
+								<li>
+									3. <strong>Refreshments</strong> - The refreshments will be provided at the final destination for each and every participant.
+								</li>
+								<li>
+									4. <strong>Basic </strong> - Drinking water, toilets and all other facilities will be provided by us.
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+						<div class="clearfix"> </div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+<!-- //bootstrap-pop-up -->
+<!-- banner-bottom -->
+	<div class="banner-bottom">
+		<div class="container">
+			<div class="agileits_banner_bottom">
+				<h4><i>“The miracle isn’t that I finished. It’s that I had the courage to start.</i>”<br />
+Even after 70 years of independence, Kanpur belongs to the list of tier 2 cities. Who better than us to help change this impasse. Being an institute of national importance, Indian Institute of Technology, Kanpur considers it as its responsibility to spread the message <br /><i>“Sore today Strong tomorrow”</i><br />
+        In collaboration with the <b>Swachh Bharat Abhiyan</b>, UDGHOSH 2017 presents to you the Kanpur Marathon. So, let’s run for the beginning of a change. Gear up Kanpurites,  because its the time to run, to choose fitness as a way of life, and to champion the spirit of a clean and green Kanpur.<br /><br />
+				<span style="color:#47a4f3;font-size:30px;">#BhaagKanpurBhaag</span>
+			</h4>
+			</div>
+		</div>
+	</div>
+<!--Content-->
+<!--<div class="row">
+	<div class="col-md-4">
+		<p>
+			Section 1
+		</p>
+	</div>
+	<div class="col-md-4">
+		<p>
+			Section 2
+		</p>
+	</div>
+	<div class="col-md-4">
+		<p>
+			Section3
+		</p>
+	</div>
+</div>
+<div class ="row" >
+		<div class="col-md-3">
+			<img src="fb-art.png" class="prizes" />
+		</div>
+		<div class="col-md-3">
+			<img src="fb-art.png" class="prizes" />
+
+		</div>
+		<div class="col-md-3">
+			<img src="fb-art.png" class="prizes" />
+
+		</div>
+		<div class="col-md-3">
+			<img src="fb-art.png" class="prizes" />
+
+		</div>
+</div>
+-->
+
+<!--//content-->
+
+<!-- //banner-bottom -->
+<!-- features --
+	<div class="features">
+		<div class="container">
+			<div class="agileits_countdown">
+				<div class="clock w3agile">
+					<div class="column days">
+						<div class="timer" id="days"></div>
+						<div class="w3ls_text">DAYS</div>
+					</div>
+
+					<div class="column">
+						<div class="timer" id="hours"></div>
+						<div class="w3ls_text">HOURS</div>
+					</div>
+
+					<div class="column">
+						<div class="timer" id="minutes"></div>
+						<div class="w3ls_text">MINUTES</div>
+					</div>
+
+					<div class="column">
+						<div class="timer" id="seconds"></div>
+						<div class="w3ls_text">SECONDS</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+-- //features -->
+
+<div class="row">
+	<img src="./images/prizes.png" width="97.8%" style="margin-left:16px;margin-right:16px;" />
+</div>
+
+<div class="row" id = "map">
+	<br />
+	<h1><b>Route Map</b></h1><br/>
+	<img src="./images/map.jpg" width="97.8%" style="margin-left:16px;margin-right:16px;" />
+</div>
+<div class="row" style="margin-left:16px;margin-right:16px;" id = "sponsors">
+	<br />
+	<h1><b>Sponsors</b></h1><br/>
+	<div class="col-md-2">
+		<p>
+			<center>
+			In association with
+			</center>
+		</p>
+		<br />
+		<img src="./images/sponsor1.png" height="120px" width="200px"/>
+
+	</div>
+	<div class="col-md-2">
+		<p style="margin-top:0px;">
+			<center>
+			Official prize partner
+			</center>
+		</p>
+		<br />
+		<img src="./images/sponsor2.png" style="margin-top:-13px;" />
+
+	</div>
+	<div class="col-md-2">
+		<p style="margin-top:0px;">
+			<center>
+			Outdoor publicity partner
+			</center>
+		</p>
+		<br />
+		<img src="./images/sponsor3.png" />
+
+	</div>
+	<div class="col-md-2">
+		<p style="margin-top:0px;">
+			<center>
+			Education partner
+			</center>
+		</p>
+		<br />
+		<img src="./images/sponsor4.png" height="90px" width="200px"/>
+
+	</div>
+	<div class="col-md-2">
+		<p style="margin-top:0px;">
+			<center>
+			Fashion partner
+			</center>
+		</p>
+		<br />
+		<img src="./images/sponsor5.png" height="100px" width="220px"/>
+
+	</div>
+	<div class="col-md-2">
+		<p style="margin-top:0px;">
+			<center>
+			 Audio partner
+			</center>
+		</p>
+		<br />
+		<img src="./images/sponsor6.png" style="margin-top:33px;"/>
+
+	</div>
+	<!--<div style="white-space:nowrap; overflow-x: scroll">
+		<img src="./images/sponsor1.png" style="margin-left:10%;" /><img src="./images/sponsor2.png" height="80px" width="150px"><img src="./images/sponsor3.png" >
+		<img src="./images/sponsor4.png"/><img src="./images/sponsor5.png"><img src="./images/sponsor6.png">
+	</div>-->
+</div>
+
+
+
+<!-- countdown -->
+	<script type="text/javascript" src="js/moment.js"></script>
+    <script type="text/javascript" src="js/moment-timezone-with-data.js"></script>
+    <script type="text/javascript" src="js/timer.js"></script>
+<!-- //countdown -->
+<!-- features-bottom -->
+	<div class="features-bottom" id="contact">
+		<div class="container">
+			<h3 class="w3_agile_header">Quick <span>Contact</span></h3>
+			<div class="w3l_features_bottom_grids">
+				<div class="col-md-4 w3layouts_features_bottom_grid">
+					<div class="w3_features_bottom_grid">
+						<div class="col-xs-4 w3_features_bottom_gridl">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</div>
+						<div class="col-xs-8 w3_features_bottom_gridr">
+							<h4>Email</h4>
+							<p><a href="mailto:kanpurmarathon@gmail.com">kanpurmarathon@gmail.com</a></p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="col-md-4 w3layouts_features_bottom_grid">
+					<div class="w3_features_bottom_grid">
+						<div class="col-xs-4 w3_features_bottom_gridl">
+							<i class="fa fa-home" aria-hidden="true"></i>
+						</div>
+						<div class="col-xs-8 w3_features_bottom_gridr">
+							<h4>Address</h4>
+							<p>B-103, Hall - 1, IIT Kanpur.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="col-md-4 w3layouts_features_bottom_grid">
+					<div class="w3_features_bottom_grid">
+						<div class="col-xs-4 w3_features_bottom_gridl">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+						</div>
+						<div class="col-xs-8 w3_features_bottom_gridr">
+							<h4>Phone</h4>
+							<p>0512 679 4127</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //features-bottom -->
+<!-- footer -->
+
+<!-- //footer -->
+<!-- menu -->
+<script>
+	$(document).ready(function () {
+	  $('.mobile-nav-button').on('click', function() {
+	  $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(1)" ).toggleClass( "mobile-nav-button__line--1");
+	  $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(2)" ).toggleClass( "mobile-nav-button__line--2");
+	  $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(3)" ).toggleClass( "mobile-nav-button__line--3");
+
+	  $('.mobile-menu').toggleClass('mobile-menu--open');
+	  return false;
+	});
+	});
+</script>
+<!-- //menu -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+	/*	$(document).ready(function() {
+
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+		});*/
+	</script>
+<!-- //here ends scrolling icon -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+
+
+
+
+</body>
+
+<div class="modal fade"  id="marthonGForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="color: #333;">REGISTRATION</h4>
+      </div>
+      <div class="modal-body" style="color: #333; align-content: center;">
+
+            <iframe  src="https://docs.google.com/forms/d/e/1FAIpQLSfClJHh0CebqLxwd6u-loNgfZ4lrBT0WHGYsIdeG8rwcZHPHg/viewform?embedded=true" width="870" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <style type="text/css">
+          .q {margin-top: 30px;}
+        </style>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</html>
+
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+Edited by Bishal.
+-->
