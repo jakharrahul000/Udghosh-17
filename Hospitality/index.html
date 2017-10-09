@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hospitality | Udghosh'17</title>
+	<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32"> 
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/style1.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link id="myLink" rel="stylesheet" type="text/css" href="style1.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/fd2ef9ab09.js"></script>
+	
+	<style type="text/css">
+		.body {
+			background-color: rgba(35, 49, 74, 0.9);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		html {
+			overflow: hidden;
+			height: 100%;
+		}
+
+  .fa-eercast {
+      font-size:10px; text-align: center; padding-right: 10px;
+      color: rgba(171, 191, 219, 1);
+    }
+
+#sporticon img {
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(217, 237, 247, 0.3) );
+  filter: drop-shadow(2px 2px 2px rgba(217, 237, 247, 0.3));
+}
+	</style>
+</head>
+
+<body style="  background: url('img/background1.png') repeat ; background-size: 100%;">
+	<div class="body" >
+		<div class="topnav" id="myTopnav">
+			<div class="navbar-header"><a class="navbar-brand" href="../"><img src="img/logo.png" >
+			</a></div>
+
+			<span class="cl-effect-1"><a href="../Events/">EVENTS</a></span>
+			<span class="cl-effect-1"><a href="../Gallery/">GALLERY</a></span>
+			<span class="cl-effect-1"><a href="../Team/">TEAM</a></span>
+			<span class="cl-effect-1"><a href="#">SPONSORS</a></span>
+			<span class="cl-effect-1"><a href="#">HOSPITALITY</a></span>
+			<a href="javascript:void(0);" style="font-size:15px; color: #333;" class="icon" onclick="myFunction()">&#9776;</a>
+			<a style="float:none; display: inline" href="../SignUp/"><button class="button button3">REGISTER</button></a>
+
+			<li class="faq" style="cursor: pointer;"><a data-toggle="modal" data-target="#myModal" href="#" style="font-size: 13px; height: 40px; width: 49px; ">
+				<span class="fa-stack fa-lg" style="font-size: 1em;">
+					<i class="fa fa-circle fa-stack-2x"></i>
+					<i class="fa fa-question fa-stack-1x fa-inverse"></i><span style="text-align: center;padding-left: 30px; top:7px;">FAQs
+				</span></a></li>
+
+
+
+			</div>
+
+
+			<nav class=" hidden-md hidden-lg navbar navbar-default  " >
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div  class="navbar-header">
+					<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a class="navbar-brand" href="../" style="border-right:none;   margin-top: 8px; padding:5px;"><img src="img/logo.png"  >
+					</a>
+				</div>
+				<!-- Collection of nav links and other content for toggling -->
+				<div id="navbarCollapse" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="cl-effect-1"><a href="../">HOME</a></li>
+						<li class="cl-effect-1"><a href="../Events/">EVENTS</a></li>
+						<li class="cl-effect-1"><a href="../Gallery/">GALLERY</a></li>
+						<li class="cl-effect-1"><a href="../Team/">TEAM</a></li>
+						<li class="cl-effect-1"><a href="#">SPONSORS</a></li>
+						<li class="cl-effect-1"><a href="#">HOSPITALITY</a></li>
+
+
+					</ul>
+
+				</div>
+			</nav>
+
+
+
+			<div class="cd-horizontal-timeline">
+
+	<!--<div class="timeline" id="timeline1" >
+		<div class="events-wrapper">
+			<div class="events">
+				<ol>
+					<li><a href="#0" data-date="02/01/2017" class="selected">Athletics</a></li>
+					<li><a href="#0" data-date="03/01/2017">Badminton</a></li>
+					<li><a href="#0" data-date="04/01/2017">Basketball</a></li>
+					<li><a href="#0" data-date="05/01/2017">Carrom</a></li>
+					<li><a href="#0" data-date="06/01/2017">Chess</a></li>
+					<li><a href="#0" data-date="07/01/2017">Cricket</a></li>
+					<li><a href="#0" data-date="08/01/2017">Football</a></li>
+					<li><a href="#0" data-date="09/01/2017">Handball</a></li>
+					<li><a href="#0" data-date="10/01/2017">Hockey</a></li>
+					<li><a href="#0" data-date="11/01/2017">Kabaddi</a></li>
+					<li><a href="#0" data-date="12/01/2017">Kho-kho</a></li>
+					<li><a href="#0" data-date="13/01/2017">Lawn Tennis</a></li>
+					<li><a href="#0" data-date="14/01/2017">Mr. Udghosh</a></li>
+					<li><a href="#0" data-date="15/01/2017">Powerlifting</a></li>
+					<li><a href="#0" data-date="16/01/2017">Skating</a></li>
+					<li><a href="#0" data-date="17/01/2017">Sports Quiz</a></li>
+					<li><a href="#0" data-date="18/01/2017">Squash</a></li>
+					<li><a href="#0" data-date="19/01/2017">Swimming</a></li>
+					<li><a href="#0" data-date="20/01/2017">Table Tennis</a></li>
+					<li><a href="#0" data-date="21/01/2017">Taekwondo</a></li>
+					<li><a href="#0" data-date="22/01/2017">Volleyball</a></li>
+					<li><a href="#0" data-date="23/01/2017">General rules</a></li>
+					
+				</ol>
+
+				<span class="filling-line" aria-hidden="true"></span>
+			</div> .events -->
+			<!--</div>  .events-wrapper -->
+			
+		<!--<ul class="cd-timeline-navigation">
+			<li><a href="#0" class="prev inactive">Prev</a></li>
+			<li><a href="#0" class="next">Next</a></li>
+		</ul>  .cd-timeline-navigation -->
+		<!--	</div>  .timeline -->
+
+				<div class="events-content">
+					<ol>
+						<li class="selected" data-date="02/01/2017">
+							<h2>FAQS</h2>
+							<div>
+							<div style="display: inline;float: left; " class="rule" >
+								<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+									<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+										<p><i class="fa fa-question-circle" aria-hidden="true" style="padding-right: 10px;"></i> 
+										 <div style="margin-left: 30px; margin-top: -35px;"><strong>What is the procedure to be followed after reaching IITK?</strong></div>
+											<i class="fa  fa-arrow-circle-right" aria-hidden="true" style="padding-right:10px; 
+											 margin-bottom:16px;"></i> <div style="margin-left: 30px; margin-top: -35px;">- You need to report to the Hospitality Desk, Students Activity Centre (SAC) along with your college identity card.<br>
+- You will have to produce the reciept of your online payment and a recent passport size photograph. <br>
+- Booklet will act as your identity card in campus. <br>
+- In case of a big contingent, contingent leader needs to present the ID cards of all the people in his contingent at the hospitality desk along with a list of all the people. Accommodation would be strictly on shared basis.</div>
+										</p><br>
+										<p style="margin-top: -10px;"><i class="fa fa-question-circle" aria-hidden="true" style="padding-right: 10px;"></i> 
+										 <div style="margin-left: 30px; margin-top: -35px;"><strong>Can two participants be from different colleges in a team event?</strong></div>
+										 <i class="fa  fa-arrow-circle-right" aria-hidden="true" style="padding-right:10px;
+										  margin-bottom:16px;"></i><div style="margin-left: 30px; margin-top: -35px;">No, Udghosh does not allow cross participation from colleges in a team event.</div>
+										</p><br>
+										<p style="margin-top:-10px;"><i class="fa fa-question-circle" aria-hidden="true" style="padding-right: 10px;"></i> 
+										 <div style="margin-left: 30px; margin-top: -35px;"><strong>Can I get accommodation on 10th october or before although the festival starts from 12th october?</strong></div>
+										 <i class="fa  fa-arrow-circle-right" aria-hidden="true" style="padding-right:10px;
+										  margin-bottom:16px;"></i><div style="margin-left: 30px; margin-top: -35px;">No, accommodation will be provided from 11th evening. All the participants coming before can stay in hotels outside IIT Kanpur.</div>
+										</p><br>
+										<p style="margin-top:-10px;"><i class="fa fa-question-circle" aria-hidden="true" style="padding-right: 10px;"></i> 
+										 <div style="margin-left: 30px; margin-top: -35px;"><strong>I dont want accommodation because I belong to kanpur , am I expected to pay the registration amount?</strong></div>
+										 <i class="fa  fa-arrow-circle-right" aria-hidden="true" style="padding-right:10px;
+										  margin-bottom:16px;"></i><div style="margin-left: 30px; margin-top: -35px;">Yes, the registration amount has to be paid by every participant. The accommodation and messing facilities are complimentary.</div>
+										</p>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li data-date="04/01/2017">
+							<h2>Checklist</h2>
+							<div>
+							<div style="display: inline;float: left; " class="rule" >
+								<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+									<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+										<p><strong>Please ensure you have the following items before coming to hospitality desk:
+										</strong><br>
+											<i class="fa fa-eercast" aria-hidden="true" style="margin-left:25px;"></i>Hard copy of filled registration forms, with no spelling mistake <br>
+											<i class="fa fa-eercast" aria-hidden="true" style="margin-left:25px;"></i>Hard copy of NOC  <br>
+											<i class="fa fa-eercast" aria-hidden="true" style="margin-left:25px;"></i>Hard copy of payment/transaction details  <br>
+											<i class="fa fa-eercast" aria-hidden="true" style="margin-left:25px;"></i>2 photographs of each student  <br>
+											<i class="fa fa-eercast" aria-hidden="true" style="margin-left:25px;"></i>College identity card per participant  
+											<br>
+											<i class="fa fa-eercast" aria-hidden="true" style="margin-left:25px;"></i>Account details for security refund<br>  
+										</p>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li data-date="06/01/2017">
+							<h2>Accommodation</h2>
+							<div>
+							<div style="display: inline;float: left; " class="rule" >
+								<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+									<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+										<p><i class="fa fa-eercast" aria-hidden="true"></i>  Accomodation will be provided from 11th evening. All the participants coming before can also stay in hotels outside IIT Kanpur..</p>
+										<p><i class="fa fa-eercast" aria-hidden="true"></i> You are required to report at the Hospitality desk in SAC (Students Activity Center) as soon as you arrive at the campus. Look out for directions in the campus to reach the hospitality desk.</p>
+										<p><i class="fa fa-eercast" aria-hidden="true"></i> All participants are required to carry their original college identity cards with photo proof to avail the accommodation and messing facilities in the campus and are required to follow the Rules and Regulations as mentioned on the respective page.</p>
+										<p><i class="fa fa-eercast" aria-hidden="true"></i> Kindly note that the accommodation is strictly on a shared basis and any requests for individual rooms or any complaints in this regard shall not be entertained.</p>
+										<p><i class="fa fa-eercast" aria-hidden="true"></i> You will be provided messing facility in the campus itself. Apart from the regular messing facilities there are a number of canteens in the campus which can cater to your eating requirements.</p>
+										<p><i class="fa fa-eercast" aria-hidden="true"></i> The fees for registration is INR 1500 along with a security deposit of INR 200 per participant. Mode of payment is online.</p>
+										<p><i class="fa fa-eercast" aria-hidden="true"></i> This is the registration fees for Udghosh, Not for the facilities provided by Udghosh i.e. if anyone does not want to take accommodation or food still he/she has to pay the registration fees.</p>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li data-date="08/01/2017">
+							<h2>Reaching IITK</h2>
+							<div>
+								<div style="display: inline;float: left; " class="rule" >
+									<div style="width: 100%;overflow-y:scroll;" id="style-1" >
+										<div style=" padding-top: 10px; padding-right: 15px; color: #f5f5f5;">
+											<p><i class="fa fa-eercast" aria-hidden="true"></i> From Kanpur Central Railway Station : Taxis and autos are easily available from the Cantt side of the Kanpur Central Railway Station (from Platform number 1 side). There is a pre-paid auto and taxi booth.</p>
+											<p><i class="fa fa-eercast" aria-hidden="true"></i> The rates are Rs. 300 for a taxi and Rs. 200 for an auto. Sometimes you may be able to negotiate a few rupees less with the driver, if you don't go to the pre-paid booth. For convenience, fix up the rates with the driver before you board the auto or the taxi.</p>
+											<p><i class="fa fa-eercast" aria-hidden="true"></i> We will also arrange for some buses from the Kanpur Central Railway Station to pick up the participants. These would be available on the Platform 1 side of the Railway Station. However since the number of buses is limited, you might have to arrange for your own conveyance.</p>
+											<p><i class="fa fa-eercast" aria-hidden="true"></i> From the Bus Stand: Buses will not be available here so you will have to arrange for your own conveyance..</p>
+											<p><i class="fa fa-eercast" aria-hidden="true"></i> Autos are easily available from the Bus stand to IIT Kanpur.</p>
+											<p><i class="fa fa-eercast" aria-hidden="true"></i> The rates are Rs 200 for an auto. For convenience, fix up the rates with the driver before you board the auto.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+					</ol>
+				</div> <!-- .events-content -->
+
+
+
+				<div class="timeline">
+					<div class="events-wrapper">
+						<div class="events">
+							<ol>
+								<li><a href="#0" data-date="02/01/2017" class="selected">FAQS</a></li>
+								<li><a href="#0" data-date="04/01/2017">Checklist</a></li>
+								<li><a href="#0" data-date="06/01/2017">Accommodation</a></li>
+								<li><a href="#0" data-date="08/01/2017">Reaching IITK</a></li>
+							</ol>
+
+							<span class="filling-line" aria-hidden="true"></span>
+						</div> <!-- .events -->
+					</div> <!-- .events-wrapper -->
+
+					<ul class="cd-timeline-navigation">
+						<li><a href="#0" class="prev inactive">Prev</a></li>
+						<li><a href="#0" class="next">Next</a></li>
+					</ul> <!-- .cd-timeline-navigation -->
+				</div> <!-- .timeline -->
+
+			</div>
+
+			<div class="foot">
+				<div class="footer-social-icons">
+					<ul class="social-icons">
+						<li><a href="https://www.facebook.com/udghosh.iitk/" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/udghoshiitk" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.youtube.com/user/udghosh11" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+						<li><a href="https://www.linkedin.com/company-beta/7575911/" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+						<li><a href="https://plus.google.com/101958681892074759002?hl=en" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+						<div id="register" > <li  class="register" ><a href="Register/signup.html"  >REGISTER</a></li></div>
+					</ul>
+				</div>
+				<div id="creative" style="color: #cccccc;  float: right; margin-right: 30px;margin-top:7px;"><i class="fa fa-copyright" aria-hidden="true"></i><span style="padding-left: 5px;font-size: 13px;">Creatives Udghosh 2017</span></div>
+			</div>
+
+
+			</div>
+		</div>
+
+<script>
+function myFunction() {
+	document.getElementById("myLink").disabled = true;
+}
+</script>
+
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+</body>
+
+																																		          <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="color: #333;">Frequently Asked Questions</h4>
+      </div>
+      <div class="modal-body" style="color: #333;">
+        <h4><strong>Q.&nbsp;What is the procedure to be followed after reaching IITK?</strong></h4>
+        <p style="padding-left: 20px; color: #333;">You need to report to the Hospitality Desk, Students Activity Centre (SAC) along with your college identity card. <br>You will have to produce the reciept of your online payment and a recent passport size photograph. <br>Booklet will act as your identity card in campus. <br>In case of a big contingent, contingent leader needs to present the ID cards of all the people in his contingent at the hospitality desk along with a list of all the people. Accommodation would be strictly on shared basis. </p>
+
+
+                <h4 class="q"><strong>Q.&nbsp;Can two participants be from different colleges in a team event? </strong></h4>
+        <p style="padding-left: 20px;color: #333;">No, Udghosh does not allow cross participation from colleges in a team event.</p>
+
+
+                <h4 class="q"><strong>Q.&nbsp;Can I get accommodation on 10th october or before although the festival starts from 12th october?</strong></h4>
+        <p style="padding-left: 20px;color: #333;">No, accommodation will be provided from 11th evening. All the participants coming before can stay in hotels outside IIT Kanpur.</p>
+
+                
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <style type="text/css">
+          .q {margin-top: 30px;}
+        </style>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+																																		</html>
